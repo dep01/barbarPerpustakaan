@@ -1,0 +1,9 @@
+Sebelum coding
+-git pull origin master(Untuk memperbarui project dilaptop dengan yang terbaru sesuai dengan file di GIT)
+
+Selesai coding
+-Git add . (Untuk menambahkan pembaruan yg ditambah/diubah di laptop)
+
+-Git commit -m"Isi pesan bebas" (Untuk memberitahu perubahan apa saja yg sudah dilakukan)
+
+-Git push origin master (Untuk memperbarui folder di GIT sesuai dengan perubahan yg ada di laptop) 
