@@ -1,1 +1,11 @@
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\perpusBarbar\perpusBarbar\bin\Debug\perpusBarbar.exe.config
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe.config
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Resources.resources
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.vbproj.GenerateResource.Cache
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.pdb
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.xml
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Login.resources
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.exe
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.xml
+E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.pdb
