@@ -22,81 +22,118 @@ Partial Class MenuUtama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuUtama))
-        Me.GroupBox = New System.Windows.Forms.GroupBox()
-        Me.btnanggota = New System.Windows.Forms.Button()
-        Me.btnbuku = New System.Windows.Forms.Button()
-        Me.btnpinjam = New System.Windows.Forms.Button()
-        Me.btnkembali = New System.Windows.Forms.Button()
-        Me.GroupBox.SuspendLayout()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GantiPasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnggotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PetugasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PeminjamanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PengembalianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox
+        'MenuStrip1
         '
-        Me.GroupBox.Controls.Add(Me.btnkembali)
-        Me.GroupBox.Controls.Add(Me.btnpinjam)
-        Me.GroupBox.Controls.Add(Me.btnbuku)
-        Me.GroupBox.Controls.Add(Me.btnanggota)
-        Me.GroupBox.Location = New System.Drawing.Point(13, 13)
-        Me.GroupBox.Name = "GroupBox"
-        Me.GroupBox.Size = New System.Drawing.Size(390, 138)
-        Me.GroupBox.TabIndex = 0
-        Me.GroupBox.TabStop = False
-        Me.GroupBox.Text = "Group Box"
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterToolStripMenuItem, Me.MasterToolStripMenuItem1, Me.PeminjamanToolStripMenuItem, Me.PengembalianToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(795, 24)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'btnanggota
+        'MasterToolStripMenuItem
         '
-        Me.btnanggota.Image = CType(resources.GetObject("btnanggota.Image"), System.Drawing.Image)
-        Me.btnanggota.Location = New System.Drawing.Point(0, 46)
-        Me.btnanggota.Name = "btnanggota"
-        Me.btnanggota.Size = New System.Drawing.Size(83, 86)
-        Me.btnanggota.TabIndex = 0
-        Me.btnanggota.Text = "Anggota"
-        Me.btnanggota.UseVisualStyleBackColor = True
+        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GantiPasswordToolStripMenuItem, Me.LogOutToolStripMenuItem})
+        Me.MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
+        Me.MasterToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
+        Me.MasterToolStripMenuItem.Text = "User"
         '
-        'btnbuku
+        'GantiPasswordToolStripMenuItem
         '
-        Me.btnbuku.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnbuku.Location = New System.Drawing.Point(89, 46)
-        Me.btnbuku.Name = "btnbuku"
-        Me.btnbuku.Size = New System.Drawing.Size(83, 86)
-        Me.btnbuku.TabIndex = 1
-        Me.btnbuku.Text = "Buku"
-        Me.btnbuku.UseVisualStyleBackColor = True
+        Me.GantiPasswordToolStripMenuItem.Name = "GantiPasswordToolStripMenuItem"
+        Me.GantiPasswordToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.GantiPasswordToolStripMenuItem.Text = "Akun"
         '
-        'btnpinjam
+        'LogOutToolStripMenuItem
         '
-        Me.btnpinjam.Location = New System.Drawing.Point(178, 46)
-        Me.btnpinjam.Name = "btnpinjam"
-        Me.btnpinjam.Size = New System.Drawing.Size(83, 86)
-        Me.btnpinjam.TabIndex = 2
-        Me.btnpinjam.Text = "Peminjaman"
-        Me.btnpinjam.UseVisualStyleBackColor = True
+        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogOutToolStripMenuItem.Text = "Log Out"
         '
-        'btnkembali
+        'MasterToolStripMenuItem1
         '
-        Me.btnkembali.Location = New System.Drawing.Point(267, 46)
-        Me.btnkembali.Name = "btnkembali"
-        Me.btnkembali.Size = New System.Drawing.Size(89, 86)
-        Me.btnkembali.TabIndex = 3
-        Me.btnkembali.Text = "Pengembalian"
-        Me.btnkembali.UseVisualStyleBackColor = True
+        Me.MasterToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BukuToolStripMenuItem, Me.AnggotaToolStripMenuItem, Me.PetugasToolStripMenuItem, Me.AddUserToolStripMenuItem})
+        Me.MasterToolStripMenuItem1.Name = "MasterToolStripMenuItem1"
+        Me.MasterToolStripMenuItem1.Size = New System.Drawing.Size(55, 20)
+        Me.MasterToolStripMenuItem1.Text = "Master"
+        '
+        'BukuToolStripMenuItem
+        '
+        Me.BukuToolStripMenuItem.Name = "BukuToolStripMenuItem"
+        Me.BukuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BukuToolStripMenuItem.Text = "Buku"
+        '
+        'AnggotaToolStripMenuItem
+        '
+        Me.AnggotaToolStripMenuItem.Name = "AnggotaToolStripMenuItem"
+        Me.AnggotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AnggotaToolStripMenuItem.Text = "Anggota"
+        '
+        'PetugasToolStripMenuItem
+        '
+        Me.PetugasToolStripMenuItem.Name = "PetugasToolStripMenuItem"
+        Me.PetugasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PetugasToolStripMenuItem.Text = "Petugas"
+        '
+        'AddUserToolStripMenuItem
+        '
+        Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AddUserToolStripMenuItem.Text = "Add User"
+        '
+        'PeminjamanToolStripMenuItem
+        '
+        Me.PeminjamanToolStripMenuItem.Name = "PeminjamanToolStripMenuItem"
+        Me.PeminjamanToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
+        Me.PeminjamanToolStripMenuItem.Text = "Peminjaman"
+        '
+        'PengembalianToolStripMenuItem
+        '
+        Me.PengembalianToolStripMenuItem.Name = "PengembalianToolStripMenuItem"
+        Me.PengembalianToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.PengembalianToolStripMenuItem.Text = "Pengembalian"
         '
         'MenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 261)
-        Me.Controls.Add(Me.GroupBox)
+        Me.ClientSize = New System.Drawing.Size(795, 505)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MenuUtama"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama Perpus BarBar"
-        Me.GroupBox.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents btnkembali As System.Windows.Forms.Button
-    Friend WithEvents btnpinjam As System.Windows.Forms.Button
-    Friend WithEvents btnbuku As System.Windows.Forms.Button
-    Friend WithEvents btnanggota As System.Windows.Forms.Button
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents MasterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GantiPasswordToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LogOutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MasterToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AnggotaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PetugasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AddUserToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PeminjamanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PengembalianToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

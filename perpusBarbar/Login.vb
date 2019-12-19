@@ -2,13 +2,12 @@
 Imports System.Data.SqlClient
 Public Class Login
     Dim hitung As Integer
+
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.GroupBox3.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")
+        Me.GroupBox3.BackgroundImageLayout = ImageLayout.Stretch
     End Sub
-    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        If MessageBox.Show("Yakin Ingin Membatalkan Login?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.Yes Then
-            Me.Close()
-        End If
-    End Sub
+
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         Call koneksi()
         cmd = New SqlCommand("select * from mUser where idUser='" & user.Text & "' and password='" & pass.Text & "'", conn)
@@ -27,6 +26,12 @@ Public Class Login
             If hitung = 1 Then
                 End
             End If
+        End If
+    End Sub
+
+    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
+        If MessageBox.Show("yakin ingin membatalkan login?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.Yes Then
+            Application.Exit()
         End If
     End Sub
 End Class

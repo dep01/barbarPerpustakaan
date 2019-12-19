@@ -9,3 +9,15 @@ E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Login.re
 E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.exe
 E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.xml
 E:\vb perpus\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.pdb
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe.config
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.pdb
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.xml
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Login.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.MenuUtama.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Resources.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.ServerSetting.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.vbproj.GenerateResource.Cache
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.exe
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.xml
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.pdb

@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.perpusBarbar.Login
+            Me.MainForm = Global.perpusBarbar.ServerSetting
         End Sub
     End Class
 End Namespace
