@@ -66,7 +66,6 @@ Module Module1
             objReader.Close()
         Catch ex As Exception
             If Err.Number = 53 Then
-
             Else
                 MessageBox.Show(ex.Message)
             End If
