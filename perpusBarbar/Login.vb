@@ -1,4 +1,4 @@
-﻿Imports System.Data.OleDb
+﻿
 Imports System.Data.SqlClient
 Public Class Login
     Dim hitung As Integer
@@ -6,6 +6,8 @@ Public Class Login
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.GroupBox3.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")
         Me.GroupBox3.BackgroundImageLayout = ImageLayout.Stretch
+        user.Text = "lope12"
+        pass.Text = "langsungenter"
     End Sub
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
@@ -18,12 +20,11 @@ Public Class Login
                 MsgBox("Password Salah")
                 Exit Sub
             End If
-            Me.Visible = False
             MenuUtama.Show()
         Else
             MsgBox("Password Salah")
             hitung = hitung + 1
-            If hitung = 1 Then
+            If hitung = 3 Then
                 End
             End If
         End If

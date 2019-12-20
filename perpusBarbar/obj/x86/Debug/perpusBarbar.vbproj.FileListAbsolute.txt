@@ -13,6 +13,7 @@ C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.pdb
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.xml
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.HakAksesFrm.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Login.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.MenuUtama.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Resources.resources

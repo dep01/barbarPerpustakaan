@@ -23,90 +23,99 @@ Partial Class MenuUtama
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GantiPasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MasterToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AnggotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PetugasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PeminjamanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PengembalianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PeminjamanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PengembalianToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AkunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogOutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BukuToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PetugasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnggotaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddUserToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HakAksesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterToolStripMenuItem, Me.MasterToolStripMenuItem1, Me.PeminjamanToolStripMenuItem, Me.PengembalianToolStripMenuItem})
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.MasterToolStripMenuItem2, Me.PeminjamanToolStripMenuItem1, Me.PengembalianToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(795, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 3, 0, 3)
+        Me.MenuStrip1.Size = New System.Drawing.Size(795, 29)
+        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.Text = "MenuStrip2"
         '
-        'MasterToolStripMenuItem
+        'UserToolStripMenuItem
         '
-        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GantiPasswordToolStripMenuItem, Me.LogOutToolStripMenuItem})
-        Me.MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
-        Me.MasterToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
-        Me.MasterToolStripMenuItem.Text = "User"
+        Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AkunToolStripMenuItem, Me.LogOutToolStripMenuItem1})
+        Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(51, 23)
+        Me.UserToolStripMenuItem.Text = "User"
         '
-        'GantiPasswordToolStripMenuItem
+        'MasterToolStripMenuItem2
         '
-        Me.GantiPasswordToolStripMenuItem.Name = "GantiPasswordToolStripMenuItem"
-        Me.GantiPasswordToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.GantiPasswordToolStripMenuItem.Text = "Akun"
+        Me.MasterToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BukuToolStripMenuItem1, Me.PetugasToolStripMenuItem1, Me.AnggotaToolStripMenuItem1, Me.AddUserToolStripMenuItem1, Me.HakAksesToolStripMenuItem})
+        Me.MasterToolStripMenuItem2.Name = "MasterToolStripMenuItem2"
+        Me.MasterToolStripMenuItem2.Size = New System.Drawing.Size(69, 23)
+        Me.MasterToolStripMenuItem2.Text = "Master"
         '
-        'LogOutToolStripMenuItem
+        'PeminjamanToolStripMenuItem1
         '
-        Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LogOutToolStripMenuItem.Text = "Log Out"
+        Me.PeminjamanToolStripMenuItem1.Name = "PeminjamanToolStripMenuItem1"
+        Me.PeminjamanToolStripMenuItem1.Size = New System.Drawing.Size(106, 23)
+        Me.PeminjamanToolStripMenuItem1.Text = "Peminjaman"
         '
-        'MasterToolStripMenuItem1
+        'PengembalianToolStripMenuItem1
         '
-        Me.MasterToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BukuToolStripMenuItem, Me.AnggotaToolStripMenuItem, Me.PetugasToolStripMenuItem, Me.AddUserToolStripMenuItem})
-        Me.MasterToolStripMenuItem1.Name = "MasterToolStripMenuItem1"
-        Me.MasterToolStripMenuItem1.Size = New System.Drawing.Size(55, 20)
-        Me.MasterToolStripMenuItem1.Text = "Master"
+        Me.PengembalianToolStripMenuItem1.Name = "PengembalianToolStripMenuItem1"
+        Me.PengembalianToolStripMenuItem1.Size = New System.Drawing.Size(118, 23)
+        Me.PengembalianToolStripMenuItem1.Text = "Pengembalian"
         '
-        'BukuToolStripMenuItem
+        'AkunToolStripMenuItem
         '
-        Me.BukuToolStripMenuItem.Name = "BukuToolStripMenuItem"
-        Me.BukuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.BukuToolStripMenuItem.Text = "Buku"
+        Me.AkunToolStripMenuItem.Name = "AkunToolStripMenuItem"
+        Me.AkunToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.AkunToolStripMenuItem.Text = "Akun"
         '
-        'AnggotaToolStripMenuItem
+        'LogOutToolStripMenuItem1
         '
-        Me.AnggotaToolStripMenuItem.Name = "AnggotaToolStripMenuItem"
-        Me.AnggotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AnggotaToolStripMenuItem.Text = "Anggota"
+        Me.LogOutToolStripMenuItem1.Name = "LogOutToolStripMenuItem1"
+        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.LogOutToolStripMenuItem1.Text = "Log Out"
         '
-        'PetugasToolStripMenuItem
+        'BukuToolStripMenuItem1
         '
-        Me.PetugasToolStripMenuItem.Name = "PetugasToolStripMenuItem"
-        Me.PetugasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.PetugasToolStripMenuItem.Text = "Petugas"
+        Me.BukuToolStripMenuItem1.Name = "BukuToolStripMenuItem1"
+        Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.BukuToolStripMenuItem1.Text = "Buku"
         '
-        'AddUserToolStripMenuItem
+        'PetugasToolStripMenuItem1
         '
-        Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
-        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AddUserToolStripMenuItem.Text = "Add User"
+        Me.PetugasToolStripMenuItem1.Name = "PetugasToolStripMenuItem1"
+        Me.PetugasToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.PetugasToolStripMenuItem1.Text = "Petugas"
         '
-        'PeminjamanToolStripMenuItem
+        'AnggotaToolStripMenuItem1
         '
-        Me.PeminjamanToolStripMenuItem.Name = "PeminjamanToolStripMenuItem"
-        Me.PeminjamanToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
-        Me.PeminjamanToolStripMenuItem.Text = "Peminjaman"
+        Me.AnggotaToolStripMenuItem1.Name = "AnggotaToolStripMenuItem1"
+        Me.AnggotaToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.AnggotaToolStripMenuItem1.Text = "Anggota"
         '
-        'PengembalianToolStripMenuItem
+        'AddUserToolStripMenuItem1
         '
-        Me.PengembalianToolStripMenuItem.Name = "PengembalianToolStripMenuItem"
-        Me.PengembalianToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
-        Me.PengembalianToolStripMenuItem.Text = "Pengembalian"
+        Me.AddUserToolStripMenuItem1.Name = "AddUserToolStripMenuItem1"
+        Me.AddUserToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.AddUserToolStripMenuItem1.Text = "Add User"
+        '
+        'HakAksesToolStripMenuItem
+        '
+        Me.HakAksesToolStripMenuItem.Name = "HakAksesToolStripMenuItem"
+        Me.HakAksesToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.HakAksesToolStripMenuItem.Text = "Hak Akses"
         '
         'MenuUtama
         '
@@ -115,7 +124,6 @@ Partial Class MenuUtama
         Me.ClientSize = New System.Drawing.Size(795, 505)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MenuUtama"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama Perpus BarBar"
@@ -126,14 +134,15 @@ Partial Class MenuUtama
 
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents MasterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents GantiPasswordToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents LogOutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MasterToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AnggotaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PetugasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AddUserToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PeminjamanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PengembalianToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents UserToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AkunToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LogOutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MasterToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BukuToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PetugasToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AnggotaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AddUserToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents HakAksesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PeminjamanToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PengembalianToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class
