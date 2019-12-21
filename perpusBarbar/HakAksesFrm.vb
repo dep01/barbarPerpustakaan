@@ -10,12 +10,29 @@ Public Class HakAksesFrm
         Call LoadDataGroup()
         Call LoadComboGroup()
     End Sub
+    Private Function CekDataStatus()
+        Dim x As Integer = 0
+        Dim query As String = "exec spMstatusUser 'cek',0,'" & TxtNamaGroup.Text & "'"
+        Call koneksi()
+        cmd = New SqlCommand(query, conn)
+        dr = cmd.ExecuteReader
+        dr.Read()
+        If dr.HasRows Then
+            x = 1
+        End If
+        Return x
+    End Function
     Private Sub simpanGroup()
-        Dim strQuery As String = "insert into mStatususer(jenisUser) values('" & TxtNamaGroup.Text & "')"
-        SQLInsert(strQuery)
-        MsgBox("Data berhasil di simpan", vbInformation, "Sukses")
-        Call LoadDataGroup()
-        Call LoadComboGroup()
+        If CekDataStatus() = 1 Then
+            MsgBox("Jenis User tersebut sudah ada!", vbExclamation, "WOY")
+        Else
+            Dim strQuery As String = "exec spMstatusUser 'add',0,'" & TxtNamaGroup.Text & "'"
+            SQLInsert(strQuery)
+            MsgBox("Data berhasil di simpan", vbInformation, "Sukses")
+            Call LoadDataGroup()
+            Call LoadComboGroup()
+            TxtNamaGroup.Clear()
+        End If
     End Sub
     Private Sub LoadComboGroup()
         Dim dt As New DataTable

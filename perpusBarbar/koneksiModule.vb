@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
-Module Module1
+
+Module koneksiModule
     Dim strFile As String = String.Format(My.Application.Info.DirectoryPath & "\SettingServer.txt")
     Dim sLine As String = ""
     Dim arrText As New ArrayList()
@@ -55,7 +56,7 @@ Module Module1
                 vUserDB = ""
                 vPassDB = ""
             End If
-            
+
             If cekKoneksi(vServer, vDb, vUserDB, vPassDB) = 1 Then
                 x = 1
                 Login.Show()
@@ -73,5 +74,5 @@ Module Module1
         End Try
         Return x
     End Function
-
+    
 End Module
