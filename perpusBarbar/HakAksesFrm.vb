@@ -10,20 +10,10 @@ Public Class HakAksesFrm
         Call LoadDataGroup()
         Call LoadComboGroup()
     End Sub
-    Private Function CekDataStatus()
-        Dim x As Integer = 0
-        Dim query As String = "exec spMstatusUser 'cek',0,'" & TxtNamaGroup.Text & "'"
-        Call koneksi()
-        cmd = New SqlCommand(query, conn)
-        dr = cmd.ExecuteReader
-        dr.Read()
-        If dr.HasRows Then
-            x = 1
-        End If
-        Return x
-    End Function
+
     Private Sub simpanGroup()
-        If CekDataStatus() = 1 Then
+        Dim sql As String = "exec spMstatusUser 'cek',0,'" & TxtNamaGroup.Text & "'"
+        If CekExistsData(sql) = 1 Then
             MsgBox("Jenis User tersebut sudah ada!", vbExclamation, "WOY")
         Else
             Dim strQuery As String = "exec spMstatusUser 'add',0,'" & TxtNamaGroup.Text & "'"
@@ -35,10 +25,8 @@ Public Class HakAksesFrm
         End If
     End Sub
     Private Sub LoadComboGroup()
-        Dim dt As New DataTable
-        Call koneksi()
-        da = New SqlDataAdapter("select * from mStatusUser", conn)
-        da.Fill(dt)
+        Dim sql As String = "exec spMstatusUser 'get'," & vIdStatus & ",'x'"
+        Call FillCombobox(sql)
         With CmbGroup
             .DataSource = dt
             .ValueMember = "idStatusUser"
@@ -48,11 +36,8 @@ Public Class HakAksesFrm
 
     End Sub
     Private Sub LoadDataGroup()
-        Call koneksi()
-        da = New SqlDataAdapter("select * from mStatusUser", conn)
-        ds = New DataSet
-        da.Fill(ds)
-
+        Dim Sql As String = "exec spMstatusUser 'get'," & vIdStatus & ",'x'"
+        Call FillDgv(Sql)
         Me.DGVgroup.DataSource = (ds.Tables(0))
 
         Me.DGVgroup.Columns(0).HeaderText = "ID Status"
@@ -74,7 +59,7 @@ Public Class HakAksesFrm
         Me.DGVgroup.Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
 
         Me.DGVgroup.AllowUserToAddRows = False
-   
+
     End Sub
 
 

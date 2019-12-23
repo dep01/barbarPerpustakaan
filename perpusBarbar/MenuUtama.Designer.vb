@@ -35,12 +35,15 @@ Partial Class MenuUtama
         Me.PeminjamanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PengembalianToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.MasterBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterPenerbitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterJenisBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem, Me.MasterToolStripMenuItem2, Me.PeminjamanToolStripMenuItem1, Me.PengembalianToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -54,14 +57,14 @@ Partial Class MenuUtama
         '
         Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AkunToolStripMenuItem, Me.LogOutToolStripMenuItem1})
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(51, 23)
-        Me.UserToolStripMenuItem.Text = "User"
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(57, 23)
+        Me.UserToolStripMenuItem.Text = "Akun"
         '
         'AkunToolStripMenuItem
         '
         Me.AkunToolStripMenuItem.Name = "AkunToolStripMenuItem"
-        Me.AkunToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
-        Me.AkunToolStripMenuItem.Text = "Akun"
+        Me.AkunToolStripMenuItem.Size = New System.Drawing.Size(183, 24)
+        Me.AkunToolStripMenuItem.Text = "Ganti Password"
         '
         'LogOutToolStripMenuItem1
         '
@@ -78,8 +81,9 @@ Partial Class MenuUtama
         '
         'BukuToolStripMenuItem1
         '
+        Me.BukuToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterBukuToolStripMenuItem, Me.MasterPenerbitToolStripMenuItem, Me.MasterJenisBukuToolStripMenuItem})
         Me.BukuToolStripMenuItem1.Name = "BukuToolStripMenuItem1"
-        Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
+        Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.BukuToolStripMenuItem1.Text = "Buku"
         '
         'PetugasToolStripMenuItem1
@@ -97,8 +101,8 @@ Partial Class MenuUtama
         'AddUserToolStripMenuItem1
         '
         Me.AddUserToolStripMenuItem1.Name = "AddUserToolStripMenuItem1"
-        Me.AddUserToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
-        Me.AddUserToolStripMenuItem1.Text = "Add User"
+        Me.AddUserToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.AddUserToolStripMenuItem1.Text = "User"
         '
         'HakAksesToolStripMenuItem
         '
@@ -125,6 +129,24 @@ Partial Class MenuUtama
         Me.StatusStrip1.Size = New System.Drawing.Size(795, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'MasterBukuToolStripMenuItem
+        '
+        Me.MasterBukuToolStripMenuItem.Name = "MasterBukuToolStripMenuItem"
+        Me.MasterBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterBukuToolStripMenuItem.Text = "Master Buku"
+        '
+        'MasterPenerbitToolStripMenuItem
+        '
+        Me.MasterPenerbitToolStripMenuItem.Name = "MasterPenerbitToolStripMenuItem"
+        Me.MasterPenerbitToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterPenerbitToolStripMenuItem.Text = "Master Penerbit"
+        '
+        'MasterJenisBukuToolStripMenuItem
+        '
+        Me.MasterJenisBukuToolStripMenuItem.Name = "MasterJenisBukuToolStripMenuItem"
+        Me.MasterJenisBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterJenisBukuToolStripMenuItem.Text = "Master Jenis Buku"
         '
         'MenuUtama
         '
@@ -156,4 +178,7 @@ Partial Class MenuUtama
     Friend WithEvents PeminjamanToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PengembalianToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
+    Friend WithEvents MasterBukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MasterPenerbitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MasterJenisBukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

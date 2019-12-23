@@ -18,4 +18,26 @@
     Private Sub ToolStripStatusLabel1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
+
+    Private Sub LogOutToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogOutToolStripMenuItem1.Click
+        Dim frm As New Login
+        frm.Show()
+        Me.Close()
+    End Sub
+
+
+
+    Private Sub AkunToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AkunToolStripMenuItem.Click
+        Dim frm As New GantiPassword
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AddUserToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddUserToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub MasterPenerbitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MasterPenerbitToolStripMenuItem.Click
+        Dim frm As New Penerbit
+        frm.ShowDialog()
+    End Sub
 End Class

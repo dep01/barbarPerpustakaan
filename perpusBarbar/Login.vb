@@ -28,61 +28,66 @@ Public Class Login
 
         Next
     End Sub
+    Private Sub bukamenu()
+        For Each header As ToolStripMenuItem In MenuUtama.MenuStrip1.Items
+            header.Visible = True
+
+            For Each Menu1 In header.DropDownItems.OfType(Of ToolStripMenuItem)()
+
+                Menu1.Visible = True
+
+                For Each menu2 In Menu1.DropDownItems.OfType(Of ToolStripMenuItem)()
+
+                    menu2.Visible = True
+
+                    For Each menu3 In menu2.DropDownItems.OfType(Of ToolStripMenuItem)()
+
+                        menu3.Visible = True
+                    Next
+                Next
+            Next
+
+        Next
+    End Sub
     Private Sub HakAksesMenu()
-        Dim b As New ADODB.Recordset
-        If b.State = 1 Then Close()
-        b.CursorLocation = ADODB.CursorLocationEnum.adUseClient
-        vSqlString = "exec spMstUserMenu 'Get',0," & vIdGroup & ",'menu','submenu',1"
-        b.Open(vSqlString, connPos, ADODB.CursorTypeEnum.adOpenDynamic, ADODB.LockTypeEnum.adLockOptimistic)
-        With b
-            If Not .EOF Then
-                .MoveFirst()
-                Do While Not .EOF
-                    For Each header As ToolStripMenuItem In XplorerFrm.MenuStrip1.Items
+        Call koneksi()
+        Dim x As String = "exec sptblHakakses 'get',0," & vIdStatus & ",'menu','submenu'"
+        cmd = New SqlCommand(x, conn)
+        dr = cmd.ExecuteReader
 
-                        For Each Menu1 In header.DropDownItems.OfType(Of ToolStripMenuItem)()
+        Do While dr.Read()
+            For Each header As ToolStripMenuItem In MenuUtama.MenuStrip1.Items
+                If header.Text = dr.Item(2) Then
+                    header.Visible = True
+                End If
+                For Each Menu1 In header.DropDownItems.OfType(Of ToolStripMenuItem)()
 
-                            If Menu1.Text = .Fields!Submenu.Value Then
+                    If Menu1.Text = dr.Item(3) Then
+                        header.Visible = True
+                        Menu1.Visible = True
+
+                    End If
+
+                    For Each menu2 As ToolStripMenuItem In Menu1.DropDownItems
+                        If menu2.Text = dr.Item(3) And Menu1.Text = dr.Item(2) Then
+                            header.Visible = True
+                            Menu1.Visible = True
+                            menu2.Visible = True
+                        End If
+
+                        For Each menu3 As ToolStripMenuItem In menu2.DropDownItems
+                            If menu3.Text = dr.Item(3) And menu2.Text = dr.Item(2) Then
                                 header.Visible = True
                                 Menu1.Visible = True
-
+                                menu2.Visible = True
+                                menu3.Visible = True
                             End If
-
-                            For Each menu2 As ToolStripMenuItem In Menu1.DropDownItems
-                                If menu2.Text = .Fields!Submenu.Value And Menu1.Text = .Fields!Menu.Value Then
-                                    header.Visible = True
-                                    Menu1.Visible = True
-                                    menu2.Visible = True
-                                End If
-
-                                For Each menu3 As ToolStripMenuItem In menu2.DropDownItems
-                                    If menu3.Text = .Fields!Submenu.Value And menu2.Text = .Fields!Menu.Value Then
-                                        header.Visible = True
-                                        Menu1.Visible = True
-                                        menu2.Visible = True
-                                        menu3.Visible = True
-                                    End If
-
-                                    'For Each menu4 As ToolStripMenuItem In menu3.DropDownItems
-                                    '    If menu4.Text = RsConn("submenu").Value And menu3.Text = RsConn("namamenu").Value Then
-                                    '        header.Visible = True
-                                    '        Menu1.Visible = True
-                                    '        menu2.Visible = True
-                                    '        menu3.Visible = True
-                                    '        menu4.Visible = True
-                                    '    End If
-                                    'Next
-                                Next
-                            Next
                         Next
                     Next
+                Next
+            Next
+        Loop
 
-                    .MoveNext()
-                Loop
-
-            End If
-
-        End With
     End Sub
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.GroupBox3.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")

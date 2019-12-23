@@ -22,3 +22,6 @@ C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.exe
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.xml
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.pdb
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.GantiPassword.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Buku.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Penerbit.resources

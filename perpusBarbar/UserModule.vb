@@ -14,4 +14,16 @@ Module UserModule
         vIdStatus = dr.Item(3)
     End Sub
 
+    Public Function GantiPass(ByVal strQuery)
+        Dim x As Integer = 0
+        Call koneksi()
+        cmd = New SqlCommand(strQuery, conn)
+        dr = cmd.ExecuteReader
+        dr.Read()
+        If dr.HasRows Then
+            x = 1
+        End If
+        Return x
+    End Function
+
 End Module
