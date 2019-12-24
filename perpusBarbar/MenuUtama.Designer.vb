@@ -28,6 +28,9 @@ Partial Class MenuUtama
         Me.LogOutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MasterToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BukuToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterPenerbitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterJenisBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PetugasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnggotaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddUserToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,9 +38,6 @@ Partial Class MenuUtama
         Me.PeminjamanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PengembalianToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.MasterBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MasterPenerbitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MasterJenisBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,7 +69,7 @@ Partial Class MenuUtama
         'LogOutToolStripMenuItem1
         '
         Me.LogOutToolStripMenuItem1.Name = "LogOutToolStripMenuItem1"
-        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(132, 24)
+        Me.LogOutToolStripMenuItem1.Size = New System.Drawing.Size(183, 24)
         Me.LogOutToolStripMenuItem1.Text = "Log Out"
         '
         'MasterToolStripMenuItem2
@@ -86,16 +86,34 @@ Partial Class MenuUtama
         Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.BukuToolStripMenuItem1.Text = "Buku"
         '
+        'MasterBukuToolStripMenuItem
+        '
+        Me.MasterBukuToolStripMenuItem.Name = "MasterBukuToolStripMenuItem"
+        Me.MasterBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterBukuToolStripMenuItem.Text = "Master Buku"
+        '
+        'MasterPenerbitToolStripMenuItem
+        '
+        Me.MasterPenerbitToolStripMenuItem.Name = "MasterPenerbitToolStripMenuItem"
+        Me.MasterPenerbitToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterPenerbitToolStripMenuItem.Text = "Master Penerbit"
+        '
+        'MasterJenisBukuToolStripMenuItem
+        '
+        Me.MasterJenisBukuToolStripMenuItem.Name = "MasterJenisBukuToolStripMenuItem"
+        Me.MasterJenisBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
+        Me.MasterJenisBukuToolStripMenuItem.Text = "Master Jenis Buku"
+        '
         'PetugasToolStripMenuItem1
         '
         Me.PetugasToolStripMenuItem1.Name = "PetugasToolStripMenuItem1"
-        Me.PetugasToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
+        Me.PetugasToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.PetugasToolStripMenuItem1.Text = "Petugas"
         '
         'AnggotaToolStripMenuItem1
         '
         Me.AnggotaToolStripMenuItem1.Name = "AnggotaToolStripMenuItem1"
-        Me.AnggotaToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
+        Me.AnggotaToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
         Me.AnggotaToolStripMenuItem1.Text = "Anggota"
         '
         'AddUserToolStripMenuItem1
@@ -107,7 +125,7 @@ Partial Class MenuUtama
         'HakAksesToolStripMenuItem
         '
         Me.HakAksesToolStripMenuItem.Name = "HakAksesToolStripMenuItem"
-        Me.HakAksesToolStripMenuItem.Size = New System.Drawing.Size(146, 24)
+        Me.HakAksesToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
         Me.HakAksesToolStripMenuItem.Text = "Hak Akses"
         '
         'PeminjamanToolStripMenuItem1
@@ -129,24 +147,6 @@ Partial Class MenuUtama
         Me.StatusStrip1.Size = New System.Drawing.Size(795, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'MasterBukuToolStripMenuItem
-        '
-        Me.MasterBukuToolStripMenuItem.Name = "MasterBukuToolStripMenuItem"
-        Me.MasterBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
-        Me.MasterBukuToolStripMenuItem.Text = "Master Buku"
-        '
-        'MasterPenerbitToolStripMenuItem
-        '
-        Me.MasterPenerbitToolStripMenuItem.Name = "MasterPenerbitToolStripMenuItem"
-        Me.MasterPenerbitToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
-        Me.MasterPenerbitToolStripMenuItem.Text = "Master Penerbit"
-        '
-        'MasterJenisBukuToolStripMenuItem
-        '
-        Me.MasterJenisBukuToolStripMenuItem.Name = "MasterJenisBukuToolStripMenuItem"
-        Me.MasterJenisBukuToolStripMenuItem.Size = New System.Drawing.Size(201, 24)
-        Me.MasterJenisBukuToolStripMenuItem.Text = "Master Jenis Buku"
         '
         'MenuUtama
         '

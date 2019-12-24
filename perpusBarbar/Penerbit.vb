@@ -1,4 +1,4 @@
-﻿Imports System.Data.SqlClient
+﻿
 Public Class Penerbit
 
     Private Sub Penerbit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -40,17 +40,64 @@ Public Class Penerbit
             .DisplayMember = "namaPenerbit"
         End With
     End Sub
-    Private Sub btnsave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnsave.Click
-        If btnsave.Text = "Tambah" Then
-            btnsave.Text = "Update"
-            Button1.Text = "Simpan"
-            Button2.Enabled = False
+    Private Sub btnTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTambah.Click
+        If btnTambah.Text = "Tambah" Then
+            btnTambah.Text = "Update"
+            btnUpdate.Text = "Simpan"
+            btnHapus.Enabled = False
             CmbGroup.Enabled = False
         Else
-            btnsave.Text = "Tambah"
-            Button1.Text = "Update"
-            Button2.Enabled = True
+            btnTambah.Text = "Tambah"
+            btnUpdate.Text = "Update"
+            btnHapus.Enabled = True
             CmbGroup.Enabled = True
         End If
+    End Sub
+
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+        btnTambah.Text = "Tambah"
+        btnUpdate.Text = "Update"
+        btnHapus.Enabled = True
+        CmbGroup.Enabled = True
+        TxtPenerbit.Clear()
+        TxtPenerbit.Focus()
+        LoadDataPenerbit()
+        AddCombobox()
+    End Sub
+
+    Private Sub btnUpdate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdate.Click
+        If TxtPenerbit.Text = "" Then
+            MsgBox("Penerbit tidak boleh kosong!!", vbExclamation, "WOI")
+        Else
+            If btnUpdate.Text = "Update" Then
+                Dim x As String = "exec spMpenerbit 'cek',0,'" & TxtPenerbit.Text & "'"
+                If CekExistsData(x) = 1 Then
+                    MsgBox("Nama penerbit tersebut sudah digunakan!", vbExclamation, "WOI")
+                Else
+                    x = "exec spMpenerbit 'upd','" & CmbGroup.SelectedValue & "','" & TxtPenerbit.Text & "'"
+                    SQLInsert(x)
+                    MsgBox("Data berhasil di Update :)", vbInformation, "Perhatian")
+                    btnCancel_Click(btnCancel, Nothing)
+                End If
+            Else
+                Dim x As String = "exec spMpenerbit 'cek',0,'" & TxtPenerbit.Text & "'"
+                If CekExistsData(x) = 1 Then
+                    MsgBox("Nama penerbit tersebut sudah digunakan!", vbExclamation, "WOI")
+                Else
+                    x = "exec spMpenerbit 'add',0,'" & TxtPenerbit.Text & "'"
+                    SQLInsert(x)
+                    MsgBox("Data berhasil di Simpan :)", vbInformation, "Perhatian")
+                    btnCancel_Click(btnCancel, Nothing)
+                End If
+            End If
+        End If
+       
+    End Sub
+
+    Private Sub btnHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnHapus.Click
+        Dim x As String = "exec spMpenerbit 'del','" & CmbGroup.SelectedValue & "','" & TxtPenerbit.Text & "'"
+        SQLInsert(x)
+        MsgBox("Data berhasil dihapus :)", vbInformation, "Perhatian")
+        btnCancel_Click(btnCancel, Nothing)
     End Sub
 End Class

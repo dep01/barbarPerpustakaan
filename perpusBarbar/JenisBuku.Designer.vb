@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Penerbit
+Partial Class JenisBuku
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,69 +22,20 @@ Partial Class Penerbit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DGVgroup = New System.Windows.Forms.DataGridView()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.CmbGroup = New System.Windows.Forms.ComboBox()
+        Me.CmbJenisBuku = New System.Windows.Forms.ComboBox()
         Me.btnTambah = New System.Windows.Forms.Button()
-        Me.TxtPenerbit = New System.Windows.Forms.TextBox()
+        Me.TxtJenisBuku = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DGVgroup, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DGVJenisBuku = New System.Windows.Forms.DataGridView()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DGVJenisBuku, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label2
-        '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(0, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(558, 46)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = "Penerbit"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'DGVgroup
-        '
-        Me.DGVgroup.BackgroundColor = System.Drawing.Color.RoyalBlue
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVgroup.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DGVgroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVgroup.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DGVgroup.EnableHeadersVisualStyles = False
-        Me.DGVgroup.Location = New System.Drawing.Point(0, 46)
-        Me.DGVgroup.Name = "DGVgroup"
-        Me.DGVgroup.Size = New System.Drawing.Size(255, 164)
-        Me.DGVgroup.TabIndex = 27
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.btnCancel)
-        Me.GroupBox1.Controls.Add(Me.btnHapus)
-        Me.GroupBox1.Controls.Add(Me.btnUpdate)
-        Me.GroupBox1.Controls.Add(Me.CmbGroup)
-        Me.GroupBox1.Controls.Add(Me.btnTambah)
-        Me.GroupBox1.Controls.Add(Me.TxtPenerbit)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox1.Location = New System.Drawing.Point(255, 46)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(303, 164)
-        Me.GroupBox1.TabIndex = 28
-        Me.GroupBox1.TabStop = False
         '
         'btnCancel
         '
@@ -114,6 +65,23 @@ Partial Class Penerbit
         Me.btnHapus.Text = "Hapus"
         Me.btnHapus.UseVisualStyleBackColor = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.btnCancel)
+        Me.GroupBox1.Controls.Add(Me.btnHapus)
+        Me.GroupBox1.Controls.Add(Me.btnUpdate)
+        Me.GroupBox1.Controls.Add(Me.CmbJenisBuku)
+        Me.GroupBox1.Controls.Add(Me.btnTambah)
+        Me.GroupBox1.Controls.Add(Me.TxtJenisBuku)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox1.Location = New System.Drawing.Point(255, 46)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(322, 178)
+        Me.GroupBox1.TabIndex = 31
+        Me.GroupBox1.TabStop = False
+        '
         'btnUpdate
         '
         Me.btnUpdate.BackColor = System.Drawing.Color.Transparent
@@ -128,14 +96,14 @@ Partial Class Penerbit
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
         '
-        'CmbGroup
+        'CmbJenisBuku
         '
-        Me.CmbGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CmbGroup.FormattingEnabled = True
-        Me.CmbGroup.Location = New System.Drawing.Point(79, 19)
-        Me.CmbGroup.Name = "CmbGroup"
-        Me.CmbGroup.Size = New System.Drawing.Size(186, 21)
-        Me.CmbGroup.TabIndex = 15
+        Me.CmbJenisBuku.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CmbJenisBuku.FormattingEnabled = True
+        Me.CmbJenisBuku.Location = New System.Drawing.Point(93, 19)
+        Me.CmbJenisBuku.Name = "CmbJenisBuku"
+        Me.CmbJenisBuku.Size = New System.Drawing.Size(186, 21)
+        Me.CmbJenisBuku.TabIndex = 15
         '
         'btnTambah
         '
@@ -151,12 +119,12 @@ Partial Class Penerbit
         Me.btnTambah.Text = "Tambah"
         Me.btnTambah.UseVisualStyleBackColor = False
         '
-        'TxtPenerbit
+        'TxtJenisBuku
         '
-        Me.TxtPenerbit.Location = New System.Drawing.Point(79, 46)
-        Me.TxtPenerbit.Name = "TxtPenerbit"
-        Me.TxtPenerbit.Size = New System.Drawing.Size(200, 20)
-        Me.TxtPenerbit.TabIndex = 17
+        Me.TxtJenisBuku.Location = New System.Drawing.Point(93, 46)
+        Me.TxtJenisBuku.Name = "TxtJenisBuku"
+        Me.TxtJenisBuku.Size = New System.Drawing.Size(200, 20)
+        Me.TxtJenisBuku.TabIndex = 17
         '
         'Label1
         '
@@ -166,37 +134,69 @@ Partial Class Penerbit
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(7, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 16)
+        Me.Label1.Size = New System.Drawing.Size(83, 16)
         Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Penerbit"
+        Me.Label1.Text = "Jenis Buku"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Penerbit
+        'DGVJenisBuku
+        '
+        Me.DGVJenisBuku.BackgroundColor = System.Drawing.Color.RoyalBlue
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVJenisBuku.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.DGVJenisBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVJenisBuku.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DGVJenisBuku.EnableHeadersVisualStyles = False
+        Me.DGVJenisBuku.Location = New System.Drawing.Point(0, 46)
+        Me.DGVJenisBuku.Name = "DGVJenisBuku"
+        Me.DGVJenisBuku.Size = New System.Drawing.Size(255, 178)
+        Me.DGVJenisBuku.TabIndex = 30
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(0, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(577, 46)
+        Me.Label2.TabIndex = 29
+        Me.Label2.Text = "Jenis Buku"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'JenisBuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(558, 210)
+        Me.ClientSize = New System.Drawing.Size(577, 224)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.DGVgroup)
+        Me.Controls.Add(Me.DGVJenisBuku)
         Me.Controls.Add(Me.Label2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Penerbit"
+        Me.Name = "JenisBuku"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Penerbit"
-        CType(Me.DGVgroup, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "JenisBuku"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DGVJenisBuku, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents DGVgroup As System.Windows.Forms.DataGridView
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents btnHapus As System.Windows.Forms.Button
-    Friend WithEvents btnUpdate As System.Windows.Forms.Button
-    Friend WithEvents CmbGroup As System.Windows.Forms.ComboBox
-    Friend WithEvents btnTambah As System.Windows.Forms.Button
-    Friend WithEvents TxtPenerbit As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents btnHapus As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnUpdate As System.Windows.Forms.Button
+    Friend WithEvents CmbJenisBuku As System.Windows.Forms.ComboBox
+    Friend WithEvents btnTambah As System.Windows.Forms.Button
+    Friend WithEvents TxtJenisBuku As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DGVJenisBuku As System.Windows.Forms.DataGridView
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

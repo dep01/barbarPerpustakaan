@@ -49,46 +49,7 @@ Public Class Login
 
         Next
     End Sub
-    Private Sub HakAksesMenu()
-        Call koneksi()
-        Dim x As String = "exec sptblHakakses 'get',0," & vIdStatus & ",'menu','submenu'"
-        cmd = New SqlCommand(x, conn)
-        dr = cmd.ExecuteReader
-
-        Do While dr.Read()
-            For Each header As ToolStripMenuItem In MenuUtama.MenuStrip1.Items
-                If header.Text = dr.Item(2) Then
-                    header.Visible = True
-                End If
-                For Each Menu1 In header.DropDownItems.OfType(Of ToolStripMenuItem)()
-
-                    If Menu1.Text = dr.Item(3) Then
-                        header.Visible = True
-                        Menu1.Visible = True
-
-                    End If
-
-                    For Each menu2 As ToolStripMenuItem In Menu1.DropDownItems
-                        If menu2.Text = dr.Item(3) And Menu1.Text = dr.Item(2) Then
-                            header.Visible = True
-                            Menu1.Visible = True
-                            menu2.Visible = True
-                        End If
-
-                        For Each menu3 As ToolStripMenuItem In menu2.DropDownItems
-                            If menu3.Text = dr.Item(3) And menu2.Text = dr.Item(2) Then
-                                header.Visible = True
-                                Menu1.Visible = True
-                                menu2.Visible = True
-                                menu3.Visible = True
-                            End If
-                        Next
-                    Next
-                Next
-            Next
-        Loop
-
-    End Sub
+   
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.GroupBox3.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")
         Me.GroupBox3.BackgroundImageLayout = ImageLayout.Stretch
@@ -114,7 +75,7 @@ Public Class Login
             MenuUtama.StatusStrip1.Items.Add("Status  : " & vStatusUser & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
             If vIdStatus <> 1 Then
                 Call kuncimenuXplore()
-                Call HakAksesMenu()
+                Call HakAksesMenu("exec sptblHakakses 'get',0," & vIdStatus & ",'menu','submenu'")
             Else
                 Call bukamenu()
             End If

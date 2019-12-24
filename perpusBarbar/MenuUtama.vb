@@ -40,4 +40,9 @@
         Dim frm As New Penerbit
         frm.ShowDialog()
     End Sub
+
+    Private Sub MasterJenisBukuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MasterJenisBukuToolStripMenuItem.Click
+        Dim frm As New JenisBuku
+        frm.ShowDialog()
+    End Sub
 End Class
