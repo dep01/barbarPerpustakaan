@@ -45,4 +45,10 @@
         Dim frm As New JenisBuku
         frm.ShowDialog()
     End Sub
+
+
+    Private Sub MasterRakBukuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MasterRakBukuToolStripMenuItem.Click
+        Dim frm As New RakBuku
+        frm.ShowDialog()
+    End Sub
 End Class

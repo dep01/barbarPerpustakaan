@@ -129,6 +129,12 @@
     <Compile Include="Penerbit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RakBuku.Designer.vb">
+      <DependentUpon>RakBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RakBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ServerSetting.Designer.vb">
       <DependentUpon>ServerSetting.vb</DependentUpon>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Penerbit.resx">
       <DependentUpon>Penerbit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RakBuku.resx">
+      <DependentUpon>RakBuku.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServerSetting.resx">
       <DependentUpon>ServerSetting.vb</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Module koneksiModule
-    Dim strFile As String = String.Format(My.Application.Info.DirectoryPath & "\SettingServer.txt")
+    Dim strFile As String = String.Format(My.Application.Info.DirectoryPath & "\SettingServer.dep")
     Dim sLine As String = ""
     Dim arrText As New ArrayList()
     Dim vServer As String
