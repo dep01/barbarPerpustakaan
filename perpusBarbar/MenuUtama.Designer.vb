@@ -32,6 +32,7 @@ Partial Class MenuUtama
         Me.MasterPenerbitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MasterJenisBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MasterRakBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JumlahBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PetugasToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnggotaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddUserToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,7 +43,6 @@ Partial Class MenuUtama
         Me.HarianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.JumlahBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -115,6 +115,12 @@ Partial Class MenuUtama
         Me.MasterRakBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
         Me.MasterRakBukuToolStripMenuItem.Text = "Master Rak Buku"
         '
+        'JumlahBukuToolStripMenuItem
+        '
+        Me.JumlahBukuToolStripMenuItem.Name = "JumlahBukuToolStripMenuItem"
+        Me.JumlahBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.JumlahBukuToolStripMenuItem.Text = "Input Buku Masuk"
+        '
         'PetugasToolStripMenuItem1
         '
         Me.PetugasToolStripMenuItem1.Name = "PetugasToolStripMenuItem1"
@@ -177,12 +183,6 @@ Partial Class MenuUtama
         Me.StatusStrip1.Size = New System.Drawing.Size(795, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'JumlahBukuToolStripMenuItem
-        '
-        Me.JumlahBukuToolStripMenuItem.Name = "JumlahBukuToolStripMenuItem"
-        Me.JumlahBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
-        Me.JumlahBukuToolStripMenuItem.Text = "Input Buku Masuk"
         '
         'MenuUtama
         '

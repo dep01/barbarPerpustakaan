@@ -39,7 +39,7 @@
         End With
     End Sub
 
-    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         btnTambah.Text = "Tambah"
         btnUpdate.Text = "Update"
         btnHapus.Enabled = True

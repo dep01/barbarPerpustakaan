@@ -24,6 +24,15 @@ Module Getdata
         End Try
 
     End Sub
+    Public Sub fillComboboxAdd(ByVal strQuery)
+        Try
+            Call koneksi()
+            cmd = New SqlCommand(strQuery, conn)
+            dr = cmd.ExecuteReader
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
     Public Sub HakAksesMenu(ByVal strQuery)
         Call koneksi()
         cmd = New SqlCommand(strQuery, conn)
