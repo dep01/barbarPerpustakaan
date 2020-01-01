@@ -56,4 +56,9 @@
         Dim frm As New Buku
         frm.ShowDialog()
     End Sub
+
+    Private Sub JumlahBukuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles JumlahBukuToolStripMenuItem.Click
+        Dim frm As New LokasidanJumlah
+        frm.ShowDialog()
+    End Sub
 End Class

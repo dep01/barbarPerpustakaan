@@ -118,8 +118,8 @@ Partial Class MenuUtama
         'JumlahBukuToolStripMenuItem
         '
         Me.JumlahBukuToolStripMenuItem.Name = "JumlahBukuToolStripMenuItem"
-        Me.JumlahBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
-        Me.JumlahBukuToolStripMenuItem.Text = "Input Buku Masuk"
+        Me.JumlahBukuToolStripMenuItem.Size = New System.Drawing.Size(242, 24)
+        Me.JumlahBukuToolStripMenuItem.Text = "Lokasi Dan Jumlah Buku"
         '
         'PetugasToolStripMenuItem1
         '

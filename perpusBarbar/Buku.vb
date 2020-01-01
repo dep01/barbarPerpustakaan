@@ -106,7 +106,6 @@ Public Class Buku
             End If
         End If
     End Sub
-
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
         btnTambah.Text = "Tambah"
         btnUpdate.Text = "Update"
@@ -146,4 +145,13 @@ Public Class Buku
             MsgBox(Err.Number)
         End Try
     End Sub
+
+    Private Sub txtJangka_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtJangka.KeyPress
+        If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then e.Handled = True
+    End Sub
+
+    Private Sub txtDenda_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtDenda.KeyPress
+        If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then e.Handled = True
+    End Sub
+
 End Class
