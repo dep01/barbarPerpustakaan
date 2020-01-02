@@ -61,4 +61,14 @@
         Dim frm As New LokasidanJumlah
         frm.ShowDialog()
     End Sub
+
+    Private Sub PetugasToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PetugasToolStripMenuItem1.Click
+        Dim frm As New Petugas
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AnggotaToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AnggotaToolStripMenuItem1.Click
+        Dim frm As New Anggota
+        frm.ShowDialog()
+    End Sub
 End Class

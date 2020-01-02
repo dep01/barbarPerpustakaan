@@ -22,7 +22,7 @@ Partial Class Buku
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -47,9 +47,11 @@ Partial Class Buku
         Me.btnTambah = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DGVBuku = New System.Windows.Forms.DataGridView()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGVBuku, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -68,22 +70,13 @@ Partial Class Buku
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
-        Me.GroupBox1.Controls.Add(Me.DTterbit)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.txtDenda)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txtJangka)
-        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtBuku)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.cmbJenisBuku)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.btnCancel)
-        Me.GroupBox1.Controls.Add(Me.btnHapus)
-        Me.GroupBox1.Controls.Add(Me.btnUpdate)
         Me.GroupBox1.Controls.Add(Me.cmbPenerbit)
-        Me.GroupBox1.Controls.Add(Me.btnTambah)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox1.Location = New System.Drawing.Point(0, 46)
@@ -149,7 +142,7 @@ Partial Class Buku
         '
         'DTterbit
         '
-        Me.DTterbit.Location = New System.Drawing.Point(451, 69)
+        Me.DTterbit.Location = New System.Drawing.Point(122, 58)
         Me.DTterbit.Name = "DTterbit"
         Me.DTterbit.Size = New System.Drawing.Size(200, 20)
         Me.DTterbit.TabIndex = 32
@@ -160,7 +153,7 @@ Partial Class Buku
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(335, 73)
+        Me.Label7.Location = New System.Drawing.Point(6, 62)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(111, 16)
         Me.Label7.TabIndex = 31
@@ -169,7 +162,7 @@ Partial Class Buku
         '
         'txtDenda
         '
-        Me.txtDenda.Location = New System.Drawing.Point(451, 43)
+        Me.txtDenda.Location = New System.Drawing.Point(122, 32)
         Me.txtDenda.Name = "txtDenda"
         Me.txtDenda.Size = New System.Drawing.Size(186, 20)
         Me.txtDenda.TabIndex = 30
@@ -180,7 +173,7 @@ Partial Class Buku
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(335, 44)
+        Me.Label6.Location = New System.Drawing.Point(6, 33)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(111, 16)
         Me.Label6.TabIndex = 29
@@ -189,7 +182,7 @@ Partial Class Buku
         '
         'txtJangka
         '
-        Me.txtJangka.Location = New System.Drawing.Point(451, 17)
+        Me.txtJangka.Location = New System.Drawing.Point(122, 6)
         Me.txtJangka.Name = "txtJangka"
         Me.txtJangka.Size = New System.Drawing.Size(186, 20)
         Me.txtJangka.TabIndex = 28
@@ -200,7 +193,7 @@ Partial Class Buku
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(335, 18)
+        Me.Label5.Location = New System.Drawing.Point(6, 7)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(110, 16)
         Me.Label5.TabIndex = 27
@@ -256,7 +249,7 @@ Partial Class Buku
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCancel.Location = New System.Drawing.Point(545, 103)
+        Me.btnCancel.Location = New System.Drawing.Point(216, 92)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(63, 25)
         Me.btnCancel.TabIndex = 21
@@ -270,7 +263,7 @@ Partial Class Buku
         Me.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHapus.ForeColor = System.Drawing.Color.Transparent
-        Me.btnHapus.Location = New System.Drawing.Point(476, 103)
+        Me.btnHapus.Location = New System.Drawing.Point(147, 92)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(63, 25)
         Me.btnHapus.TabIndex = 20
@@ -284,7 +277,7 @@ Partial Class Buku
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.Color.Transparent
-        Me.btnUpdate.Location = New System.Drawing.Point(407, 103)
+        Me.btnUpdate.Location = New System.Drawing.Point(78, 92)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(63, 25)
         Me.btnUpdate.TabIndex = 19
@@ -307,7 +300,7 @@ Partial Class Buku
         Me.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTambah.ForeColor = System.Drawing.Color.Transparent
-        Me.btnTambah.Location = New System.Drawing.Point(338, 103)
+        Me.btnTambah.Location = New System.Drawing.Point(9, 92)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(63, 25)
         Me.btnTambah.TabIndex = 18
@@ -330,14 +323,14 @@ Partial Class Buku
         'DGVBuku
         '
         Me.DGVBuku.BackgroundColor = System.Drawing.Color.RoyalBlue
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVBuku.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVBuku.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DGVBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVBuku.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DGVBuku.EnableHeadersVisualStyles = False
@@ -345,6 +338,26 @@ Partial Class Buku
         Me.DGVBuku.Name = "DGVBuku"
         Me.DGVBuku.Size = New System.Drawing.Size(763, 238)
         Me.DGVBuku.TabIndex = 37
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.btnTambah)
+        Me.GroupBox3.Controls.Add(Me.DTterbit)
+        Me.GroupBox3.Controls.Add(Me.btnUpdate)
+        Me.GroupBox3.Controls.Add(Me.Label7)
+        Me.GroupBox3.Controls.Add(Me.btnHapus)
+        Me.GroupBox3.Controls.Add(Me.txtDenda)
+        Me.GroupBox3.Controls.Add(Me.btnCancel)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.txtJangka)
+        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GroupBox3.Location = New System.Drawing.Point(397, 16)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(363, 129)
+        Me.GroupBox3.TabIndex = 34
+        Me.GroupBox3.TabStop = False
         '
         'Buku
         '
@@ -363,6 +376,8 @@ Partial Class Buku
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DGVBuku, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -390,4 +405,5 @@ Partial Class Buku
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents cmbFilter As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
 End Class

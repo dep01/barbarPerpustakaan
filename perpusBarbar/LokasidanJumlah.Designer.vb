@@ -75,7 +75,7 @@ Partial Class LokasidanJumlah
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.Turquoise
+        Me.GroupBox2.BackColor = System.Drawing.Color.RoyalBlue
         Me.GroupBox2.Controls.Add(Me.cmbBuku)
         Me.GroupBox2.Controls.Add(Me.txtInput)
         Me.GroupBox2.Controls.Add(Me.Label11)

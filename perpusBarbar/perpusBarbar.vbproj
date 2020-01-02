@@ -67,27 +67,30 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anggota.Designer.vb">
+      <DependentUpon>Anggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Buku.Designer.vb">
       <DependentUpon>Buku.vb</DependentUpon>
     </Compile>
     <Compile Include="Buku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CekData.vb" />
     <Compile Include="GantiPassword.Designer.vb">
       <DependentUpon>GantiPassword.vb</DependentUpon>
     </Compile>
     <Compile Include="GantiPassword.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Getdata.vb" />
     <Compile Include="HakAksesFrm.Designer.vb">
       <DependentUpon>HakAksesFrm.vb</DependentUpon>
     </Compile>
     <Compile Include="HakAksesFrm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insertdata.vb" />
     <Compile Include="JenisBuku.Designer.vb">
       <DependentUpon>JenisBuku.vb</DependentUpon>
     </Compile>
@@ -113,7 +116,11 @@
     <Compile Include="MenuUtama.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="koneksiModule.vb" />
+    <Compile Include="Module\CekData.vb" />
+    <Compile Include="Module\Getdata.vb" />
+    <Compile Include="Module\Insertdata.vb" />
+    <Compile Include="Module\koneksiModule.vb" />
+    <Compile Include="Module\UserModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +142,12 @@
     <Compile Include="Penerbit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Petugas.Designer.vb">
+      <DependentUpon>Petugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Petugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RakBuku.Designer.vb">
       <DependentUpon>RakBuku.vb</DependentUpon>
     </Compile>
@@ -147,9 +160,11 @@
     <Compile Include="ServerSetting.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserModule.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Anggota.resx">
+      <DependentUpon>Anggota.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buku.resx">
       <DependentUpon>Buku.vb</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +195,9 @@
     <EmbeddedResource Include="Penerbit.resx">
       <DependentUpon>Penerbit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Petugas.resx">
+      <DependentUpon>Petugas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RakBuku.resx">
       <DependentUpon>RakBuku.vb</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +216,10 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reporting\Data\" />
+    <Folder Include="Reporting\FrmReport\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

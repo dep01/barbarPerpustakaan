@@ -73,6 +73,14 @@ Module Getdata
 
     End Sub
 
-
+    Public Function kartuPerpus()
+        Dim nomor As String
+        Call koneksi()
+        cmd = New SqlCommand("select dbo.fcKartuPerpus()", conn)
+        dr = cmd.ExecuteReader
+        dr.Read()
+        nomor = dr.Item(0)
+        Return nomor
+    End Function
 
 End Module

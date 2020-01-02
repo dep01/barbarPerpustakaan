@@ -94,25 +94,25 @@ Partial Class MenuUtama
         'MasterBukuToolStripMenuItem
         '
         Me.MasterBukuToolStripMenuItem.Name = "MasterBukuToolStripMenuItem"
-        Me.MasterBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.MasterBukuToolStripMenuItem.Size = New System.Drawing.Size(242, 24)
         Me.MasterBukuToolStripMenuItem.Text = "Master Buku"
         '
         'MasterPenerbitToolStripMenuItem
         '
         Me.MasterPenerbitToolStripMenuItem.Name = "MasterPenerbitToolStripMenuItem"
-        Me.MasterPenerbitToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.MasterPenerbitToolStripMenuItem.Size = New System.Drawing.Size(242, 24)
         Me.MasterPenerbitToolStripMenuItem.Text = "Master Penerbit"
         '
         'MasterJenisBukuToolStripMenuItem
         '
         Me.MasterJenisBukuToolStripMenuItem.Name = "MasterJenisBukuToolStripMenuItem"
-        Me.MasterJenisBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.MasterJenisBukuToolStripMenuItem.Size = New System.Drawing.Size(242, 24)
         Me.MasterJenisBukuToolStripMenuItem.Text = "Master Jenis Buku"
         '
         'MasterRakBukuToolStripMenuItem
         '
         Me.MasterRakBukuToolStripMenuItem.Name = "MasterRakBukuToolStripMenuItem"
-        Me.MasterRakBukuToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.MasterRakBukuToolStripMenuItem.Size = New System.Drawing.Size(242, 24)
         Me.MasterRakBukuToolStripMenuItem.Text = "Master Rak Buku"
         '
         'JumlahBukuToolStripMenuItem
