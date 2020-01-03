@@ -1,6 +1,8 @@
 ﻿Imports System.Linq
+Imports System.Net.Mail
 Public Class Login
     Dim hitung As Integer
+    Dim vUserMail As String
     Public Sub kuncimenuXplore()
 
         For Each header As ToolStripMenuItem In MenuUtama.MenuStrip1.Items
@@ -93,5 +95,55 @@ Public Class Login
         If MessageBox.Show("yakin ingin membatalkan login?", "konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = Windows.Forms.DialogResult.Yes Then
             Application.Exit()
         End If
+    End Sub
+
+    Private Sub LinkLupa_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLupa.LinkClicked
+        Try
+            Dim sql As String = "select * from settingEmail"
+            Dim vEmail, vPassEmail, vNama, vPassUser As String
+            cekLogin(sql)
+            dr.Read()
+            vEmail = dr.Item(0)
+            vPassEmail = dr.Item(1)
+            sql = "exec spMuser 'email','nik','" & user.Text & "','x','0'"
+            cekLogin(sql)
+            dr.Read()
+            If dr.HasRows Then
+                vUserMail = dr.Item(0)
+                vNama = dr.Item(1)
+                vPassUser = dr.Item(2)
+                Dim Smtp_Server As New SmtpClient
+                Dim e_mail As New MailMessage()
+                Smtp_Server.UseDefaultCredentials = False
+                Smtp_Server.Credentials = New Net.NetworkCredential(vEmail, vPassEmail)
+                Smtp_Server.Port = 587
+                Smtp_Server.EnableSsl = True
+                Smtp_Server.Host = "smtp.gmail.com"
+                e_mail = New MailMessage()
+                e_mail.From = New MailAddress(vEmail)
+                e_mail.To.Add(vUserMail)
+                e_mail.Subject = "Lupa Password"
+                e_mail.IsBodyHtml = False
+                e_mail.Body = "Halo " & vNama & "," & vbCrLf &
+                    "" & vbCrLf &
+                    "Informasi akun kamu adalah sebagai berikut:" & vbCrLf &
+                    "" & vbCrLf &
+                    "     Username: " & user.Text & "  " & vbCrLf &
+                    "     Password: " & vPassUser & "  " & vbCrLf &
+                    "" & vbCrLf &
+                    "Tolong diingat baik-baik." & vbCrLf &
+                    "Harap ubah password dengan password yang mudah diingat dan jangan dilupakan lagi, Karena kau tidak tau betapa sakitnya dilupakan :)" & vbCrLf &
+                    "" & vbCrLf &
+                    "" & vbCrLf &
+                    "Regard's BarbarTeams"
+                Smtp_Server.Send(e_mail)
+                MsgBox("Password akan dikirimkan melalui email, harap periksa email anda.", vbInformation, "Perhatian")
+            Else
+                MsgBox("Username ridak ditemukan!!", vbExclamation, "Perhatian")
+            End If
+
+        Catch error_t As Exception
+            MsgBox(error_t.ToString)
+        End Try
     End Sub
 End Class
