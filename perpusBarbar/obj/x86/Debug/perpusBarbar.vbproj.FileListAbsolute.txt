@@ -30,3 +30,4 @@ C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.LokasidanJumlah.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Petugas.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Anggota.resources
+C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.User.resources

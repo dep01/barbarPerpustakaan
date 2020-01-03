@@ -160,6 +160,12 @@
     <Compile Include="ServerSetting.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Anggota.resx">
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServerSetting.resx">
       <DependentUpon>ServerSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

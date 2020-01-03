@@ -1,5 +1,4 @@
-﻿Imports System.Data.SqlClient
-Imports System.Linq
+﻿Imports System.Linq
 Public Class Login
     Dim hitung As Integer
     Public Sub kuncimenuXplore()
@@ -58,34 +57,34 @@ Public Class Login
     End Sub
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        Call koneksi()
-        cmd = New SqlCommand("select * from mUser where idUser='" & user.Text & "' and password='" & pass.Text & "'", conn)
-        dr = cmd.ExecuteReader
+        Dim sql As String = "exec spMuser 'login','nik','" & user.Text & "','" & pass.Text & "','0'"
+        cekLogin(sql)
         dr.Read()
         If dr.HasRows Then
-            If pass.Text <> dr("password") Then
-                MsgBox("Password Salah")
-                Exit Sub
-            End If
-            Dim x As String = "exec spMstatusUser 'status',0,'" & user.Text & "'"
-            Call CekUserStatus(x)
-            MenuUtama.StatusStrip1.Items.Clear()
-            MenuUtama.StatusStrip1.Items.Add("NIK  : " & vNIK & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
-            MenuUtama.StatusStrip1.Items.Add("Nama Petugas : " & vNamaUser & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
-            MenuUtama.StatusStrip1.Items.Add("Status  : " & vStatusUser & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
-            If vIdStatus <> 1 Then
-                Call kuncimenuXplore()
-                Call HakAksesMenu("exec sptblHakakses 'get',0," & vIdStatus & ",'menu','submenu'")
+            If dr("status") = 9 Then
+                MsgBox("Petugas tersebut sudah tidak aktif!", vbInformation, "Informasi")
             Else
-                Call bukamenu()
+                Dim x As String = "exec spMstatusUser 'status',0,'" & user.Text & "'"
+                Call CekUserStatus(x)
+                MenuUtama.StatusStrip1.Items.Clear()
+                MenuUtama.StatusStrip1.Items.Add("NIK  : " & vNIK & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
+                MenuUtama.StatusStrip1.Items.Add("Nama Petugas : " & vNamaUser & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
+                MenuUtama.StatusStrip1.Items.Add("Status  : " & vStatusUser & "    ").Font = New Font("Microsoft sans serif", 8.25, FontStyle.Bold)
+                If vIdStatus <> 1 Then
+                    Call kuncimenuXplore()
+                    Call HakAksesMenu("exec sptblHakakses 'get',0," & vIdStatus & ",'menu','submenu'")
+                Else
+                    Call bukamenu()
+                End If
+                MenuUtama.Show()
+                Me.Close()
             End If
-            MenuUtama.Show()
-            Me.Close()
+
         Else
-            MsgBox("Password Salah")
+            MsgBox("Username dan Password Salah")
             hitung = hitung + 1
             If hitung = 3 Then
-                End
+                Application.Exit()
             End If
         End If
     End Sub

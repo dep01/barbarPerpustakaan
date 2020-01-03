@@ -33,7 +33,8 @@
     End Sub
 
     Private Sub AddUserToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddUserToolStripMenuItem1.Click
-
+        Dim frm As New User
+        frm.ShowDialog()
     End Sub
 
     Private Sub MasterPenerbitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MasterPenerbitToolStripMenuItem.Click

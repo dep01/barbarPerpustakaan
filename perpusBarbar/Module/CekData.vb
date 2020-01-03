@@ -11,5 +11,10 @@ Module CekData
         End If
         Return x
     End Function
-  
+    Public Sub cekLogin(ByVal strQuery)
+        Call koneksi()
+        cmd = New SqlCommand(strQuery, conn)
+        dr = cmd.ExecuteReader
+    End Sub
+
 End Module
