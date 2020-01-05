@@ -72,4 +72,9 @@
         Dim frm As New Anggota
         frm.ShowDialog()
     End Sub
+
+    Private Sub PeminjamanToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PeminjamanToolStripMenuItem1.Click
+        Dim frm As New Peminjaman
+        frm.ShowDialog()
+    End Sub
 End Class

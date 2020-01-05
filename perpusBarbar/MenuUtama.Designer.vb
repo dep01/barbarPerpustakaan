@@ -88,7 +88,7 @@ Partial Class MenuUtama
         '
         Me.BukuToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterBukuToolStripMenuItem, Me.MasterPenerbitToolStripMenuItem, Me.MasterJenisBukuToolStripMenuItem, Me.MasterRakBukuToolStripMenuItem, Me.JumlahBukuToolStripMenuItem})
         Me.BukuToolStripMenuItem1.Name = "BukuToolStripMenuItem1"
-        Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.BukuToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
         Me.BukuToolStripMenuItem1.Text = "Buku"
         '
         'MasterBukuToolStripMenuItem
@@ -124,25 +124,25 @@ Partial Class MenuUtama
         'PetugasToolStripMenuItem1
         '
         Me.PetugasToolStripMenuItem1.Name = "PetugasToolStripMenuItem1"
-        Me.PetugasToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.PetugasToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
         Me.PetugasToolStripMenuItem1.Text = "Petugas"
         '
         'AnggotaToolStripMenuItem1
         '
         Me.AnggotaToolStripMenuItem1.Name = "AnggotaToolStripMenuItem1"
-        Me.AnggotaToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.AnggotaToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
         Me.AnggotaToolStripMenuItem1.Text = "Anggota"
         '
         'AddUserToolStripMenuItem1
         '
         Me.AddUserToolStripMenuItem1.Name = "AddUserToolStripMenuItem1"
-        Me.AddUserToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.AddUserToolStripMenuItem1.Size = New System.Drawing.Size(146, 24)
         Me.AddUserToolStripMenuItem1.Text = "User"
         '
         'HakAksesToolStripMenuItem
         '
         Me.HakAksesToolStripMenuItem.Name = "HakAksesToolStripMenuItem"
-        Me.HakAksesToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.HakAksesToolStripMenuItem.Size = New System.Drawing.Size(146, 24)
         Me.HakAksesToolStripMenuItem.Text = "Hak Akses"
         '
         'PeminjamanToolStripMenuItem1

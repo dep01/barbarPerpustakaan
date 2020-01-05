@@ -136,6 +136,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Peminjaman.Designer.vb">
+      <DependentUpon>Peminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Peminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Penerbit.Designer.vb">
       <DependentUpon>Penerbit.vb</DependentUpon>
     </Compile>
@@ -197,6 +203,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peminjaman.resx">
+      <DependentUpon>Peminjaman.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Penerbit.resx">
       <DependentUpon>Penerbit.vb</DependentUpon>
