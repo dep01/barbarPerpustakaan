@@ -77,4 +77,24 @@
         Dim frm As New Peminjaman
         frm.ShowDialog()
     End Sub
+
+    Private Sub PengembalianToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PengembalianToolStripMenuItem1.Click
+        Dim frm As New Pengembalian
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub HarianToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HarianToolStripMenuItem.Click
+        Dim frm As New Laporan
+        frm.DTAkhir.Enabled = False
+        frm.DTmulai.Enabled = False
+        frm.ShowDialog()
+
+    End Sub
+
+    Private Sub PerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PerToolStripMenuItem.Click
+        Dim frm As New Laporan
+        frm.DTAkhir.Enabled = True
+        frm.DTmulai.Enabled = True
+        frm.ShowDialog()
+    End Sub
 End Class

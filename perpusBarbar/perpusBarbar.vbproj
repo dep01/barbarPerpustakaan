@@ -49,10 +49,18 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -79,6 +87,12 @@
     <Compile Include="Buku.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmReporting.Designer.vb">
+      <DependentUpon>FrmReporting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporting.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GantiPassword.Designer.vb">
       <DependentUpon>GantiPassword.vb</DependentUpon>
     </Compile>
@@ -95,6 +109,12 @@
       <DependentUpon>JenisBuku.vb</DependentUpon>
     </Compile>
     <Compile Include="JenisBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan.Designer.vb">
+      <DependentUpon>Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -148,6 +168,12 @@
     <Compile Include="Penerbit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Pengembalian.Designer.vb">
+      <DependentUpon>Pengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Petugas.Designer.vb">
       <DependentUpon>Petugas.vb</DependentUpon>
     </Compile>
@@ -159,6 +185,18 @@
     </Compile>
     <Compile Include="RakBuku.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportModule.vb" />
+    <Compile Include="RptPerbuku.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPerbuku.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPerbukuData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
     </Compile>
     <Compile Include="ServerSetting.Designer.vb">
       <DependentUpon>ServerSetting.vb</DependentUpon>
@@ -180,6 +218,9 @@
     <EmbeddedResource Include="Buku.resx">
       <DependentUpon>Buku.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporting.resx">
+      <DependentUpon>FrmReporting.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GantiPassword.resx">
       <DependentUpon>GantiPassword.vb</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JenisBuku.resx">
       <DependentUpon>JenisBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan.resx">
+      <DependentUpon>Laporan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -210,11 +254,18 @@
     <EmbeddedResource Include="Penerbit.resx">
       <DependentUpon>Penerbit.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pengembalian.resx">
+      <DependentUpon>Pengembalian.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Petugas.resx">
       <DependentUpon>Petugas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RakBuku.resx">
       <DependentUpon>RakBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPerbuku.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPerbuku.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ServerSetting.resx">
       <DependentUpon>ServerSetting.vb</DependentUpon>
@@ -234,6 +285,17 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="rptPerbukuData.xsc">
+      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+    </None>
+    <None Include="rptPerbukuData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptPerbukuData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="rptPerbukuData.xss">
+      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reporting\Data\" />
@@ -241,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
