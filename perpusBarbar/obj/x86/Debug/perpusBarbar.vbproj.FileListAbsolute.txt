@@ -36,3 +36,30 @@ C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Laporan.resources
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.vbprojResolveAssemblyReference.cache
 C:\Users\diaz erlangga\Documents\Visual Studio 2010\Projects\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.FrmReporting.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe.config
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.exe
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.xml
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.pdb
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.vbprojResolveAssemblyReference.cache
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Anggota.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Buku.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.FrmReporting.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.GantiPassword.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.HakAksesFrm.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.JenisBuku.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Laporan.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Login.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.LokasidanJumlah.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.MenuUtama.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Resources.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Peminjaman.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Penerbit.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Pengembalian.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.Petugas.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.RakBuku.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.ServerSetting.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.User.resources
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\obj\x86\Debug\perpusBarbar.vbproj.GenerateResource.Cache
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.exe
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.pdb
+C:\Users\Djendra-PC\Documents\TUGAS VB\barbarPerpustakaan\perpusBarbar\bin\Debug\perpusBarbar.xml
