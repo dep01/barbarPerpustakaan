@@ -1,6 +1,6 @@
 ﻿
 Public Class Buku
-    Dim vIdbuku As Integer
+    Dim vIdbuku, vjangka, vmaxPinjam As Integer
     Private Sub Buku_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")
         Me.BackgroundImageLayout = ImageLayout.Stretch
@@ -69,6 +69,11 @@ Public Class Buku
     Private Sub btnTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTambah.Click
         If btnTambah.Text = "Tambah" Then
             btnTambah.Text = "Update"
+            Call fillComboboxAdd("select * from settingPerpus")
+            dr.Read()
+            vjangka = dr.Item(2)
+            vmaxPinjam = dr.Item(3)
+            txtJangka.Text = vjangka
             btnUpdate.Text = "Simpan"
             btnHapus.Enabled = False
             txtBuku.Text = ""
@@ -154,4 +159,14 @@ Public Class Buku
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then e.Handled = True
     End Sub
 
+    Private Sub txtJangka_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtJangka.TextChanged
+        If txtJangka.Text = "" Then
+        Else
+            If txtJangka.Text > vmaxPinjam Then
+                MsgBox("Maksimal jangka pinjam adalah " & vmaxPinjam & " hari", vbExclamation, "WOI")
+                txtJangka.Text = vmaxPinjam
+            End If
+        End If
+  
+    End Sub
 End Class

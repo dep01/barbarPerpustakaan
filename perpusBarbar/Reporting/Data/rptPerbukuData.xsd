@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptPerbukuData" targetNamespace="http://tempuri.org/rptPerbukuData.xsd" xmlns:mstns="http://tempuri.org/rptPerbukuData.xsd" xmlns="http://tempuri.org/rptPerbukuData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptPerbukuData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="rptPerbukuData" msprop:Generator_UserDSName="rptPerbukuData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTPerbuku" msprop:Generator_TableClassName="DTPerbukuDataTable" msprop:Generator_TableVarName="tableDTPerbuku" msprop:Generator_TablePropName="DTPerbuku" msprop:Generator_RowDeletingName="DTPerbukuRowDeleting" msprop:Generator_RowChangingName="DTPerbukuRowChanging" msprop:Generator_RowEvHandlerName="DTPerbukuRowChangeEventHandler" msprop:Generator_RowDeletedName="DTPerbukuRowDeleted" msprop:Generator_UserTableName="DTPerbuku" msprop:Generator_RowChangedName="DTPerbukuRowChanged" msprop:Generator_RowEvArgName="DTPerbukuRowChangeEvent" msprop:Generator_RowClassName="DTPerbukuRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idBuku" msprop:Generator_ColumnVarNameInTable="columnidBuku" msprop:Generator_ColumnPropNameInRow="idBuku" msprop:Generator_ColumnPropNameInTable="idBukuColumn" msprop:Generator_UserColumnName="idBuku" type="xs:long" minOccurs="0" />
+              <xs:element name="judulBuku" msprop:Generator_ColumnVarNameInTable="columnjudulBuku" msprop:Generator_ColumnPropNameInRow="judulBuku" msprop:Generator_ColumnPropNameInTable="judulBukuColumn" msprop:Generator_UserColumnName="judulBuku" type="xs:string" minOccurs="0" />
+              <xs:element name="Pinjam" msprop:Generator_ColumnVarNameInTable="columnPinjam" msprop:Generator_ColumnPropNameInRow="Pinjam" msprop:Generator_ColumnPropNameInTable="PinjamColumn" msprop:Generator_UserColumnName="Pinjam" type="xs:long" minOccurs="0" />
+              <xs:element name="Kembali" msprop:Generator_ColumnVarNameInTable="columnKembali" msprop:Generator_ColumnPropNameInRow="Kembali" msprop:Generator_ColumnPropNameInTable="KembaliColumn" msprop:Generator_UserColumnName="Kembali" type="xs:long" minOccurs="0" />
+              <xs:element name="Tersedia" msprop:Generator_ColumnVarNameInTable="columnTersedia" msprop:Generator_ColumnPropNameInRow="Tersedia" msprop:Generator_ColumnPropNameInTable="TersediaColumn" msprop:Generator_UserColumnName="Tersedia" type="xs:long" minOccurs="0" />
+              <xs:element name="Dipinjam" msprop:Generator_ColumnVarNameInTable="columnDipinjam" msprop:Generator_ColumnPropNameInRow="Dipinjam" msprop:Generator_ColumnPropNameInTable="DipinjamColumn" msprop:Generator_UserColumnName="Dipinjam" type="xs:long" minOccurs="0" />
+              <xs:element name="Awal" msprop:Generator_ColumnVarNameInTable="columnAwal" msprop:Generator_ColumnPropNameInRow="Awal" msprop:Generator_ColumnPropNameInTable="AwalColumn" msprop:Generator_UserColumnName="Awal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Akhir" msprop:Generator_ColumnVarNameInTable="columnAkhir" msprop:Generator_ColumnPropNameInRow="Akhir" msprop:Generator_ColumnPropNameInTable="AkhirColumn" msprop:Generator_UserColumnName="Akhir" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

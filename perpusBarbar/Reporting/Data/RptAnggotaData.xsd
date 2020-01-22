@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RptAnggotaData" targetNamespace="http://tempuri.org/RptAnggotaData.xsd" xmlns:mstns="http://tempuri.org/RptAnggotaData.xsd" xmlns="http://tempuri.org/RptAnggotaData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RptAnggotaData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RptAnggotaData" msprop:Generator_UserDSName="RptAnggotaData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTanggota" msprop:Generator_TableClassName="DTanggotaDataTable" msprop:Generator_TableVarName="tableDTanggota" msprop:Generator_TablePropName="DTanggota" msprop:Generator_RowDeletingName="DTanggotaRowDeleting" msprop:Generator_RowChangingName="DTanggotaRowChanging" msprop:Generator_RowEvHandlerName="DTanggotaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTanggotaRowDeleted" msprop:Generator_UserTableName="DTanggota" msprop:Generator_RowChangedName="DTanggotaRowChanged" msprop:Generator_RowEvArgName="DTanggotaRowChangeEvent" msprop:Generator_RowClassName="DTanggotaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KartuPerpus" msprop:Generator_ColumnVarNameInTable="columnKartuPerpus" msprop:Generator_ColumnPropNameInRow="KartuPerpus" msprop:Generator_ColumnPropNameInTable="KartuPerpusColumn" msprop:Generator_UserColumnName="KartuPerpus" type="xs:string" minOccurs="0" />
+              <xs:element name="namaAnggota" msprop:Generator_ColumnVarNameInTable="columnnamaAnggota" msprop:Generator_ColumnPropNameInRow="namaAnggota" msprop:Generator_ColumnPropNameInTable="namaAnggotaColumn" msprop:Generator_UserColumnName="namaAnggota" type="xs:string" minOccurs="0" />
+              <xs:element name="jenisKelamin" msprop:Generator_ColumnVarNameInTable="columnjenisKelamin" msprop:Generator_ColumnPropNameInRow="jenisKelamin" msprop:Generator_ColumnPropNameInTable="jenisKelaminColumn" msprop:Generator_UserColumnName="jenisKelamin" type="xs:string" minOccurs="0" />
+              <xs:element name="alamat" msprop:Generator_ColumnVarNameInTable="columnalamat" msprop:Generator_ColumnPropNameInRow="alamat" msprop:Generator_ColumnPropNameInTable="alamatColumn" msprop:Generator_UserColumnName="alamat" type="xs:string" minOccurs="0" />
+              <xs:element name="noHP" msprop:Generator_ColumnVarNameInTable="columnnoHP" msprop:Generator_ColumnPropNameInRow="noHP" msprop:Generator_ColumnPropNameInTable="noHPColumn" msprop:Generator_UserColumnName="noHP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

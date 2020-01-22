@@ -22,36 +22,36 @@ Partial Class Buku
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnTambah = New System.Windows.Forms.Button()
+        Me.DTterbit = New System.Windows.Forms.DateTimePicker()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnHapus = New System.Windows.Forms.Button()
+        Me.txtDenda = New System.Windows.Forms.TextBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtJangka = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txtFilter = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cmbFilter = New System.Windows.Forms.ComboBox()
-        Me.DTterbit = New System.Windows.Forms.DateTimePicker()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtDenda = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtJangka = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtBuku = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbJenisBuku = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.btnHapus = New System.Windows.Forms.Button()
-        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.cmbPenerbit = New System.Windows.Forms.ComboBox()
-        Me.btnTambah = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DGVBuku = New System.Windows.Forms.DataGridView()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGVBuku, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -84,6 +84,142 @@ Partial Class Buku
         Me.GroupBox1.Size = New System.Drawing.Size(763, 205)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.btnTambah)
+        Me.GroupBox3.Controls.Add(Me.DTterbit)
+        Me.GroupBox3.Controls.Add(Me.btnUpdate)
+        Me.GroupBox3.Controls.Add(Me.Label7)
+        Me.GroupBox3.Controls.Add(Me.btnHapus)
+        Me.GroupBox3.Controls.Add(Me.txtDenda)
+        Me.GroupBox3.Controls.Add(Me.btnCancel)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.txtJangka)
+        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Right
+        Me.GroupBox3.Location = New System.Drawing.Point(397, 16)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(363, 129)
+        Me.GroupBox3.TabIndex = 34
+        Me.GroupBox3.TabStop = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(6, 7)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(110, 16)
+        Me.Label5.TabIndex = 27
+        Me.Label5.Text = "Jangka Pinjam"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnTambah
+        '
+        Me.btnTambah.BackColor = System.Drawing.Color.Transparent
+        Me.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTambah.ForeColor = System.Drawing.Color.Transparent
+        Me.btnTambah.Location = New System.Drawing.Point(9, 92)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(63, 25)
+        Me.btnTambah.TabIndex = 18
+        Me.btnTambah.Text = "Tambah"
+        Me.btnTambah.UseVisualStyleBackColor = False
+        '
+        'DTterbit
+        '
+        Me.DTterbit.Location = New System.Drawing.Point(122, 58)
+        Me.DTterbit.Name = "DTterbit"
+        Me.DTterbit.Size = New System.Drawing.Size(200, 20)
+        Me.DTterbit.TabIndex = 32
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.BackColor = System.Drawing.Color.Transparent
+        Me.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.Transparent
+        Me.btnUpdate.Location = New System.Drawing.Point(78, 92)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(63, 25)
+        Me.btnUpdate.TabIndex = 19
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(6, 62)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(111, 16)
+        Me.Label7.TabIndex = 31
+        Me.Label7.Text = "Tanggal Terbit"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnHapus
+        '
+        Me.btnHapus.BackColor = System.Drawing.Color.Transparent
+        Me.btnHapus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHapus.ForeColor = System.Drawing.Color.Transparent
+        Me.btnHapus.Location = New System.Drawing.Point(147, 92)
+        Me.btnHapus.Name = "btnHapus"
+        Me.btnHapus.Size = New System.Drawing.Size(63, 25)
+        Me.btnHapus.TabIndex = 20
+        Me.btnHapus.Text = "Hapus"
+        Me.btnHapus.UseVisualStyleBackColor = False
+        '
+        'txtDenda
+        '
+        Me.txtDenda.Location = New System.Drawing.Point(122, 32)
+        Me.txtDenda.Name = "txtDenda"
+        Me.txtDenda.Size = New System.Drawing.Size(186, 20)
+        Me.txtDenda.TabIndex = 30
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.Transparent
+        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.Transparent
+        Me.btnCancel.Location = New System.Drawing.Point(216, 92)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(63, 25)
+        Me.btnCancel.TabIndex = 21
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(6, 33)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(111, 16)
+        Me.Label6.TabIndex = 29
+        Me.Label6.Text = "Denda PerHari"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtJangka
+        '
+        Me.txtJangka.Location = New System.Drawing.Point(122, 6)
+        Me.txtJangka.Name = "txtJangka"
+        Me.txtJangka.Size = New System.Drawing.Size(186, 20)
+        Me.txtJangka.TabIndex = 28
         '
         'GroupBox2
         '
@@ -140,66 +276,6 @@ Partial Class Buku
         Me.cmbFilter.Size = New System.Drawing.Size(137, 21)
         Me.cmbFilter.TabIndex = 34
         '
-        'DTterbit
-        '
-        Me.DTterbit.Location = New System.Drawing.Point(122, 58)
-        Me.DTterbit.Name = "DTterbit"
-        Me.DTterbit.Size = New System.Drawing.Size(200, 20)
-        Me.DTterbit.TabIndex = 32
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(6, 62)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(111, 16)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "Tanggal Terbit"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtDenda
-        '
-        Me.txtDenda.Location = New System.Drawing.Point(122, 32)
-        Me.txtDenda.Name = "txtDenda"
-        Me.txtDenda.Size = New System.Drawing.Size(186, 20)
-        Me.txtDenda.TabIndex = 30
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(6, 33)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(111, 16)
-        Me.Label6.TabIndex = 29
-        Me.Label6.Text = "Denda PerHari"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'txtJangka
-        '
-        Me.txtJangka.Location = New System.Drawing.Point(122, 6)
-        Me.txtJangka.Name = "txtJangka"
-        Me.txtJangka.Size = New System.Drawing.Size(186, 20)
-        Me.txtJangka.TabIndex = 28
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(6, 7)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 16)
-        Me.Label5.TabIndex = 27
-        Me.Label5.Text = "Jangka Pinjam"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'txtBuku
         '
         Me.txtBuku.Location = New System.Drawing.Point(122, 73)
@@ -242,48 +318,6 @@ Partial Class Buku
         Me.Label3.Text = "Jenis Buku"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'btnCancel
-        '
-        Me.btnCancel.BackColor = System.Drawing.Color.Transparent
-        Me.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCancel.Location = New System.Drawing.Point(216, 92)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(63, 25)
-        Me.btnCancel.TabIndex = 21
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        '
-        'btnHapus
-        '
-        Me.btnHapus.BackColor = System.Drawing.Color.Transparent
-        Me.btnHapus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHapus.ForeColor = System.Drawing.Color.Transparent
-        Me.btnHapus.Location = New System.Drawing.Point(147, 92)
-        Me.btnHapus.Name = "btnHapus"
-        Me.btnHapus.Size = New System.Drawing.Size(63, 25)
-        Me.btnHapus.TabIndex = 20
-        Me.btnHapus.Text = "Hapus"
-        Me.btnHapus.UseVisualStyleBackColor = False
-        '
-        'btnUpdate
-        '
-        Me.btnUpdate.BackColor = System.Drawing.Color.Transparent
-        Me.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdate.ForeColor = System.Drawing.Color.Transparent
-        Me.btnUpdate.Location = New System.Drawing.Point(78, 92)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(63, 25)
-        Me.btnUpdate.TabIndex = 19
-        Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = False
-        '
         'cmbPenerbit
         '
         Me.cmbPenerbit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
@@ -292,20 +326,6 @@ Partial Class Buku
         Me.cmbPenerbit.Name = "cmbPenerbit"
         Me.cmbPenerbit.Size = New System.Drawing.Size(186, 21)
         Me.cmbPenerbit.TabIndex = 15
-        '
-        'btnTambah
-        '
-        Me.btnTambah.BackColor = System.Drawing.Color.Transparent
-        Me.btnTambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTambah.ForeColor = System.Drawing.Color.Transparent
-        Me.btnTambah.Location = New System.Drawing.Point(9, 92)
-        Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(63, 25)
-        Me.btnTambah.TabIndex = 18
-        Me.btnTambah.Text = "Tambah"
-        Me.btnTambah.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -323,14 +343,14 @@ Partial Class Buku
         'DGVBuku
         '
         Me.DGVBuku.BackgroundColor = System.Drawing.Color.RoyalBlue
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGVBuku.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGVBuku.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DGVBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVBuku.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DGVBuku.EnableHeadersVisualStyles = False
@@ -338,26 +358,6 @@ Partial Class Buku
         Me.DGVBuku.Name = "DGVBuku"
         Me.DGVBuku.Size = New System.Drawing.Size(763, 238)
         Me.DGVBuku.TabIndex = 37
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.Color.RoyalBlue
-        Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Controls.Add(Me.btnTambah)
-        Me.GroupBox3.Controls.Add(Me.DTterbit)
-        Me.GroupBox3.Controls.Add(Me.btnUpdate)
-        Me.GroupBox3.Controls.Add(Me.Label7)
-        Me.GroupBox3.Controls.Add(Me.btnHapus)
-        Me.GroupBox3.Controls.Add(Me.txtDenda)
-        Me.GroupBox3.Controls.Add(Me.btnCancel)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.txtJangka)
-        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.GroupBox3.Location = New System.Drawing.Point(397, 16)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(363, 129)
-        Me.GroupBox3.TabIndex = 34
-        Me.GroupBox3.TabStop = False
         '
         'Buku
         '
@@ -373,11 +373,11 @@ Partial Class Buku
         Me.Text = "Buku"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DGVBuku, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

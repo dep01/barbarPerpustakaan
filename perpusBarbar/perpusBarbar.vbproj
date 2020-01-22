@@ -186,18 +186,57 @@
     <Compile Include="RakBuku.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportModule.vb" />
-    <Compile Include="RptPerbuku.vb">
+    <Compile Include="Reporting\Data\rptAnalisaData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAnalisaData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Data\RptBukuData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBukuData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Data\rptPerbukuData1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Data\RptUserData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptUserData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\FrmReport\RptAnalisa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAnalisa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\FrmReport\RptAnggota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptAnggota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\FrmReport\RptBuku.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBuku.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\FrmReport\RptPerbuku1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RptPerbuku.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rptPerbukuData.Designer.vb">
+    <Compile Include="Reporting\FrmReport\RptUser.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+      <DependentUpon>RptUser.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReportModule.vb" />
     <Compile Include="ServerSetting.Designer.vb">
       <DependentUpon>ServerSetting.vb</DependentUpon>
     </Compile>
@@ -263,9 +302,25 @@
     <EmbeddedResource Include="RakBuku.resx">
       <DependentUpon>RakBuku.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RptPerbuku.rpt">
+    <EmbeddedResource Include="Reporting\FrmReport\RptAnalisa.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RptPerbuku.vb</LastGenOutput>
+      <LastGenOutput>RptAnalisa.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\FrmReport\RptAnggota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptAnggota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\FrmReport\RptBuku.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBuku.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\FrmReport\RptPerbuku.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPerbuku1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\FrmReport\RptUser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptUser.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ServerSetting.resx">
       <DependentUpon>ServerSetting.vb</DependentUpon>
@@ -285,22 +340,63 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="rptPerbukuData.xsc">
-      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+    <None Include="Reporting\Data\rptAnalisaData.xsc">
+      <DependentUpon>rptAnalisaData.xsd</DependentUpon>
     </None>
-    <None Include="rptPerbukuData.xsd">
+    <None Include="Reporting\Data\rptAnalisaData.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>rptPerbukuData.Designer.vb</LastGenOutput>
+      <LastGenOutput>rptAnalisaData.Designer.vb</LastGenOutput>
     </None>
-    <None Include="rptPerbukuData.xss">
+    <None Include="Reporting\Data\rptAnalisaData.xss">
+      <DependentUpon>rptAnalisaData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptAnggotaData.xsc">
+      <DependentUpon>RptAnggotaData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptAnggotaData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RptAnggotaData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reporting\Data\RptAnggotaData.xss">
+      <DependentUpon>RptAnggotaData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptBukuData.xsc">
+      <DependentUpon>RptBukuData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptBukuData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RptBukuData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reporting\Data\RptBukuData.xss">
+      <DependentUpon>RptBukuData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\rptPerbukuData.xsc">
       <DependentUpon>rptPerbukuData.xsd</DependentUpon>
     </None>
+    <None Include="Reporting\Data\rptPerbukuData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptPerbukuData1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reporting\Data\rptPerbukuData.xss">
+      <DependentUpon>rptPerbukuData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptUserData.xsc">
+      <DependentUpon>RptUserData.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Data\RptUserData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RptUserData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reporting\Data\RptUserData.xss">
+      <DependentUpon>RptUserData.xsd</DependentUpon>
+    </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reporting\Data\" />
-    <Folder Include="Reporting\FrmReport\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

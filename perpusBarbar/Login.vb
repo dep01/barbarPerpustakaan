@@ -54,8 +54,6 @@ Public Class Login
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.GroupBox3.BackgroundImage = System.Drawing.Image.FromFile("images.jpg")
         Me.GroupBox3.BackgroundImageLayout = ImageLayout.Stretch
-        user.Text = "lope12"
-        pass.Text = "langsungenter"
     End Sub
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
@@ -99,7 +97,7 @@ Public Class Login
 
     Private Sub LinkLupa_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLupa.LinkClicked
         Try
-            Dim sql As String = "select * from settingEmail"
+            Dim sql As String = "select * from settingPerpus"
             Dim vEmail, vPassEmail, vNama, vPassUser As String
             cekLogin(sql)
             dr.Read()

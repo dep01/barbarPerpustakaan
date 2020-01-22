@@ -97,4 +97,36 @@
         frm.DTmulai.Enabled = True
         frm.ShowDialog()
     End Sub
+
+    Private Sub AnalisaBukuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AnalisaBukuToolStripMenuItem.Click
+        dataReport("exec spReport 'analisa','2019-01-01','2019-01-01'")
+        Dim rpt As New RptAnalisa
+        rpt.SetDataSource(dtReport)
+        FrmReporting.CRV.ReportSource = rpt
+        FrmReporting.ShowDialog()
+    End Sub
+
+    Private Sub LaporanAnggotaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LaporanAnggotaToolStripMenuItem.Click
+        dataReport("exec spReport 'anggota','2019-01-01','2019-01-01'")
+        Dim rpt As New RptAnggota
+        rpt.SetDataSource(dtReport)
+        FrmReporting.CRV.ReportSource = rpt
+        FrmReporting.ShowDialog()
+    End Sub
+
+    Private Sub LaporanBukuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LaporanBukuToolStripMenuItem.Click
+        dataReport("exec spReport 'buku','2019-01-01','2019-01-01'")
+        Dim rpt As New RptBuku
+        rpt.SetDataSource(dtReport)
+        FrmReporting.CRV.ReportSource = rpt
+        FrmReporting.ShowDialog()
+    End Sub
+
+    Private Sub LaporanUserToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LaporanUserToolStripMenuItem.Click
+        dataReport("exec spReport 'user','2019-01-01','2019-01-01'")
+        Dim rpt As New RptUser
+        rpt.SetDataSource(dtReport)
+        FrmReporting.CRV.ReportSource = rpt
+        FrmReporting.ShowDialog()
+    End Sub
 End Class

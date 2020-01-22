@@ -42,6 +42,11 @@ Partial Class MenuUtama
         Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HarianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AnalisaBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanAnggotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanBukuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaporanUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -159,7 +164,7 @@ Partial Class MenuUtama
         '
         'LaporanToolStripMenuItem
         '
-        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.PerToolStripMenuItem})
+        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.PerToolStripMenuItem, Me.AnalisaBukuToolStripMenuItem, Me.MasterToolStripMenuItem})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
         Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(77, 23)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
@@ -167,14 +172,45 @@ Partial Class MenuUtama
         'HarianToolStripMenuItem
         '
         Me.HarianToolStripMenuItem.Name = "HarianToolStripMenuItem"
-        Me.HarianToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.HarianToolStripMenuItem.Size = New System.Drawing.Size(186, 24)
         Me.HarianToolStripMenuItem.Text = "Harian"
         '
         'PerToolStripMenuItem
         '
         Me.PerToolStripMenuItem.Name = "PerToolStripMenuItem"
-        Me.PerToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.PerToolStripMenuItem.Size = New System.Drawing.Size(186, 24)
         Me.PerToolStripMenuItem.Text = "Pertanggal"
+        '
+        'AnalisaBukuToolStripMenuItem
+        '
+        Me.AnalisaBukuToolStripMenuItem.Name = "AnalisaBukuToolStripMenuItem"
+        Me.AnalisaBukuToolStripMenuItem.Size = New System.Drawing.Size(186, 24)
+        Me.AnalisaBukuToolStripMenuItem.Text = "Analisa Buku"
+        '
+        'MasterToolStripMenuItem
+        '
+        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaporanAnggotaToolStripMenuItem, Me.LaporanBukuToolStripMenuItem, Me.LaporanUserToolStripMenuItem})
+        Me.MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
+        Me.MasterToolStripMenuItem.Size = New System.Drawing.Size(186, 24)
+        Me.MasterToolStripMenuItem.Text = "Laporan Master"
+        '
+        'LaporanAnggotaToolStripMenuItem
+        '
+        Me.LaporanAnggotaToolStripMenuItem.Name = "LaporanAnggotaToolStripMenuItem"
+        Me.LaporanAnggotaToolStripMenuItem.Size = New System.Drawing.Size(196, 24)
+        Me.LaporanAnggotaToolStripMenuItem.Text = "Laporan Anggota"
+        '
+        'LaporanBukuToolStripMenuItem
+        '
+        Me.LaporanBukuToolStripMenuItem.Name = "LaporanBukuToolStripMenuItem"
+        Me.LaporanBukuToolStripMenuItem.Size = New System.Drawing.Size(196, 24)
+        Me.LaporanBukuToolStripMenuItem.Text = "Laporan Buku"
+        '
+        'LaporanUserToolStripMenuItem
+        '
+        Me.LaporanUserToolStripMenuItem.Name = "LaporanUserToolStripMenuItem"
+        Me.LaporanUserToolStripMenuItem.Size = New System.Drawing.Size(196, 24)
+        Me.LaporanUserToolStripMenuItem.Text = "Laporan User"
         '
         'StatusStrip1
         '
@@ -222,4 +258,9 @@ Partial Class MenuUtama
     Friend WithEvents HarianToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents JumlahBukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AnalisaBukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MasterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LaporanAnggotaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LaporanBukuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LaporanUserToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

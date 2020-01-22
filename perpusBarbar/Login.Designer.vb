@@ -44,10 +44,10 @@ Partial Class Login
         'LinkLupa
         '
         Me.LinkLupa.AutoSize = True
-        Me.LinkLupa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLupa.Location = New System.Drawing.Point(9, 23)
+        Me.LinkLupa.Font = New System.Drawing.Font("Humanst521 Lt BT", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLupa.Location = New System.Drawing.Point(22, 24)
         Me.LinkLupa.Name = "LinkLupa"
-        Me.LinkLupa.Size = New System.Drawing.Size(111, 16)
+        Me.LinkLupa.Size = New System.Drawing.Size(84, 15)
         Me.LinkLupa.TabIndex = 20
         Me.LinkLupa.TabStop = True
         Me.LinkLupa.Text = "Lupa Password ?"

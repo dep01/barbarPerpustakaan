@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptAnalisaData" targetNamespace="http://tempuri.org/rptAnalisaData.xsd" xmlns:mstns="http://tempuri.org/rptAnalisaData.xsd" xmlns="http://tempuri.org/rptAnalisaData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptAnalisaData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="rptAnalisaData" msprop:Generator_UserDSName="rptAnalisaData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTanalisa" msprop:Generator_TableClassName="DTanalisaDataTable" msprop:Generator_TableVarName="tableDTanalisa" msprop:Generator_TablePropName="DTanalisa" msprop:Generator_RowDeletingName="DTanalisaRowDeleting" msprop:Generator_RowChangingName="DTanalisaRowChanging" msprop:Generator_RowEvHandlerName="DTanalisaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTanalisaRowDeleted" msprop:Generator_UserTableName="DTanalisa" msprop:Generator_RowChangedName="DTanalisaRowChanged" msprop:Generator_RowEvArgName="DTanalisaRowChangeEvent" msprop:Generator_RowClassName="DTanalisaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="namaPenerbit" msprop:Generator_ColumnVarNameInTable="columnnamaPenerbit" msprop:Generator_ColumnPropNameInRow="namaPenerbit" msprop:Generator_ColumnPropNameInTable="namaPenerbitColumn" msprop:Generator_UserColumnName="namaPenerbit" type="xs:string" minOccurs="0" />
+              <xs:element name="jenisBuku" msprop:Generator_ColumnVarNameInTable="columnjenisBuku" msprop:Generator_ColumnPropNameInRow="jenisBuku" msprop:Generator_ColumnPropNameInTable="jenisBukuColumn" msprop:Generator_UserColumnName="jenisBuku" type="xs:string" minOccurs="0" />
+              <xs:element name="judulBuku" msprop:Generator_ColumnVarNameInTable="columnjudulBuku" msprop:Generator_ColumnPropNameInRow="judulBuku" msprop:Generator_ColumnPropNameInTable="judulBukuColumn" msprop:Generator_UserColumnName="judulBuku" type="xs:string" minOccurs="0" />
+              <xs:element name="totalDipinjam" msprop:Generator_ColumnVarNameInTable="columntotalDipinjam" msprop:Generator_ColumnPropNameInRow="totalDipinjam" msprop:Generator_ColumnPropNameInTable="totalDipinjamColumn" msprop:Generator_UserColumnName="totalDipinjam" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
